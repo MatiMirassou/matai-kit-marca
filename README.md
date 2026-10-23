@@ -1,13 +1,15 @@
-# Mat.AI — Capabilities Deck & Brand Guide
+# Mat.AI — Showcase, Presentation & Brand Guide
 
-An interactive capabilities deck for **Mat.AI** (Matías Mirassou), plus a separate visual brand guide. Both are built with React 19, TypeScript, Tailwind CSS v4 and Motion for React, and export to vector PDFs with one 16:9 page per slide.
+A bilingual public showcase and a separate interactive capabilities presentation for **Mat.AI** (Matías Mirassou), sharing one React / TypeScript / Vite project and the same verified projects, media and visual identity. The presentation retains its 16:9 PDF export. A separate visual brand guide remains available.
 
 | Document | Web | PDF |
 |---|---|---|
-| **Capabilities deck** (12 slides) | `index.html` | `exports/Mat.AI-Capabilities-<date>.pdf` |
+| **Showcase** | `/en/`, `/es/` | — |
+| **Project pages** | `/en/work/<id>/`, `/es/work/<id>/` | — |
+| **Capabilities deck** (12 slides) | `/en/presentation/`, `/es/presentation/` | `exports/Mat.AI-Capabilities-<date>.pdf` |
 | **Visual brand guide** (6 pages) | `brand.html` | `exports/Mat.AI-Brand-Guide-<date>.pdf` |
 
-- **The deck is a separate project** from the personal portfolio website.
+- **One repository, two public layouts.** The new showcase and this presentation share this project. The older personal portfolio checkout is unrelated and has not been overwritten.
 - Strategy documents and private production references are maintained outside this public repository.
 
 ## Public repository and version history
@@ -29,12 +31,14 @@ npm install
 npm run dev
 ```
 
-Open http://localhost:5180. **Requirements:** Node 20.19+ (tested on 24), plus Microsoft Edge or Google Chrome (used for PDF export and QA; nothing is downloaded).
+Open http://localhost:5180/en/ (showcase) or http://localhost:5180/en/presentation/ (deck). **Requirements:** Node 20.19+ (tested on 24), plus Microsoft Edge or Google Chrome (used for PDF export and QA; nothing is downloaded).
 
 | Command | What it does |
 |---|---|
 | `npm run dev` | Live-reloading dev server |
-| `npm run build` | Type-check + production build into `dist/` (a static site, deployable anywhere) |
+| `npm run build` | Type-check, client build and pre-rendered EN/ES showcase/project HTML into `dist/` |
+| `npm run test:showcase` | Desktop/mobile navigation, language, filters, media and static HTML checks |
+| `npm run qa -- --no-shots --lang es` | Spanish presentation print-overflow checks |
 | `npm run export:pdf` | Build first, then export the capabilities deck PDF |
 | `npm run export:brand` | Export the visual brand guide PDF |
 | `npm run export:pdf:all` | Both PDFs |
@@ -135,11 +139,9 @@ PH('what goes here')               // visible PLACEHOLDER chip on screen and in 
   Only add figures you have read on the publisher's page, or on a reputable reprint (set `verification: 'reprint'` and `via`).
 - **Make a tailored version:** add `{ id, name, description, slides: [...] }` to `variants` in `deck.ts` and open it with `?deck=<id>`.
 - **Spanish:**
-  1. Copy `src/content/en/` to `src/content/es/` and translate the strings.
-  2. Register it in `src/content/index.ts`.
-  3. Open with `?lang=es`.
+  Shared translations live in `src/content/translations.ts`. Showcase copy uses paired strings through `src/content/language.ts`. Open `/es/` or `/es/presentation/`. Official project titles, media IDs, original quotations and playback languages stay unchanged. Add a matching Spanish translation when changing shared English copy.
 
-  Headline budgets (checked by `check:content`) leave about 25% room for longer Spanish copy.
+  The language switch preserves project, section, gallery filters, workflow and presentation slide. An explicit language choice is remembered for the next visit to `/`; explicit locale URLs always win. No location or browser-language redirect is used.
 
 ---
 

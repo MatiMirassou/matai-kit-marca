@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { useDeck } from '../deck/DeckProvider.tsx';
+import { useMediaRuntime } from './MediaRuntime.tsx';
 import { media, url } from '../lib/media.ts';
 
 /**
@@ -36,7 +36,7 @@ export function Video({
   /** object-position for the poster/video. */
   position?: string;
 }) {
-  const { isPrint, still } = useDeck();
+  const { isPrint, still } = useMediaRuntime();
   const entry = media(id);
   const posterEntry = media(poster) ?? entry;
   const wrapRef = useRef<HTMLDivElement>(null);

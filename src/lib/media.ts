@@ -42,7 +42,7 @@ export function media(id: string | undefined): MediaEntry | undefined {
   return entry;
 }
 
-export const url = (path: string | undefined) => (path ? `${base}${path}` : undefined);
+export const url = (path: string | undefined) => (path ? `${typeof location!=='undefined'&&location.protocol==='file:'?'./':base}${path}` : undefined);
 
 export const isPortrait = (m: MediaEntry | undefined) => !!m && m.height > m.width;
 

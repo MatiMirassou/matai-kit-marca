@@ -1,4 +1,4 @@
-import {content} from '../content';
+import {content,t} from '../content';
 import {Brackets,Kicker} from '../components/Cinema.tsx';
 import {Logo} from '../components/Logo.tsx';
 import {Headline,Reveal} from '../components/Reveal.tsx';
@@ -16,11 +16,11 @@ const panels=[
 export function Cover(props:SlideProps) {
  const {params}=useDeck(); const {brand}=content;
  return <SlideFrame {...props} header={false} showFooter={false} className="revised-cover hybrid-cover">
-  <div className="cover-panels">{panels.map(p=><div key={p.media} className="cover-panel"><MediaAction id={p.media} title={p.title} className="cover-panel-action"><Video id={p.media} poster={p.poster} position={p.position} priority alt={p.title}/></MediaAction><div className="cover-shade"/><span className="cover-service">{p.title}</span></div>)}</div>
+  <div className="cover-panels">{panels.map(p=><div key={p.media} className="cover-panel"><MediaAction id={p.media} title={t(p.title)} className="cover-panel-action"><Video id={p.media} poster={p.poster} position={p.position} priority alt={t(p.title)}/></MediaAction><div className="cover-shade"/><span className="cover-service">{t(p.title)}</span></div>)}</div>
   <div className="cover-wash"/>
   <Brackets inset={22} size={22} className="stack:hidden"/>
   <div className="cover-top"><Logo variant="full" tone="dark" className="cover-logo"/><p className="cover-prepared">{params.forCompany ? `${content.ui.preparedFor} ${params.forCompany}` : brand.eyebrow}</p></div>
-  <div className="cover-copy"><Headline as="h1" text={brand.taglineMarked} className="display-tight cover-title"/><p>{brand.coverSub.split(' — by ')[0]}.<span className="cover-byline">By {brand.founder}</span></p></div>
+  <div className="cover-copy"><Headline as="h1" text={brand.taglineMarked} className="display-tight cover-title"/><p>{brand.coverSub.split(/ — (?:by|por) /)[0]}.<span className="cover-byline">{t('By')} {brand.founder}</span></p></div>
   <p className="cover-location">{brand.location}<span>{brand.languages}</span></p>
  </SlideFrame>;
 }
@@ -28,8 +28,8 @@ export function Founder(props:SlideProps) {
  const f=content.founder;
  return <SlideFrame {...props} className="revised-founder"><div className="safe founder-layout">
   <div className="founder-portrait"><div className="media-frame"><Still id={f.portrait.media} alt={f.portrait.alt} position="50% 35%"/></div><p>{f.portrait.caption}</p></div>
-  <div className="founder-bio"><Kicker className="muted">{f.role}</Kicker><Headline text={f.headline} className="title"/><p className="founder-body"><Txt c={f.bio}/></p><h3>Selected credits</h3><ul>{f.credits.map(c=><li key={c.title}><em>{c.title}</em><span><Txt c={c.detail}/></span></li>)}</ul><p className="founder-skills">{f.skills.join(' / ')}</p></div>
-  <div className="founder-timeline"><h3>Experience</h3><ol>{f.timeline.map((t,i)=><li key={i}><span>{t.year}</span><strong><Txt c={t.title}/></strong><p><Txt c={t.detail}/></p></li>)}</ol></div>
+  <div className="founder-bio"><Kicker className="muted">{f.role}</Kicker><Headline text={f.headline} className="title"/><p className="founder-body"><Txt c={f.bio}/></p><h3>{t("Selected credits")}</h3><ul>{f.credits.map(c=><li key={c.title}><em>{c.title}</em><span><Txt c={c.detail}/></span></li>)}</ul><p className="founder-skills">{f.skills.join(' / ')}</p></div>
+  <div className="founder-timeline"><h3>{t("Experience")}</h3><ol>{f.timeline.map((t,i)=><li key={i}><span>{t.year}</span><strong><Txt c={t.title}/></strong><p><Txt c={t.detail}/></p></li>)}</ol></div>
  </div></SlideFrame>;
 }
 export function Offer(props:SlideProps) {

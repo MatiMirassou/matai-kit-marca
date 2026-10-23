@@ -5,6 +5,9 @@ import { Deck } from './deck/Deck.tsx';
 import { DeckChrome } from './deck/DeckChrome.tsx';
 import { DeckProvider, useDeck } from './deck/DeckProvider.tsx';
 import { media } from './lib/media.ts';
+import {currentRoute} from './lib/routes.ts';
+import {Showcase} from './showcase/Showcase.tsx';
+import {PresentationNav} from './showcase/PresentationNav.tsx';
 
 /** ?play=<project-id | media-id> opens that clip on load (used by PDF links / QR codes). */
 function PlayDeepLink() {
@@ -23,9 +26,12 @@ function PlayDeepLink() {
 }
 
 export function App() {
+  const route=currentRoute();
+  if(route.view!=='presentation'&&route.view!=='brand')return <Showcase route={route}/>;
   return (
     <DeckProvider>
       <LightboxProvider>
+        <PresentationNav />
         <Deck />
         <DeckChrome />
         <PlayDeepLink />

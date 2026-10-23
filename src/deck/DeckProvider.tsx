@@ -1,9 +1,10 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import { flushSync } from 'react-dom';
 import { MotionConfig } from 'motion/react';
-import { content } from '../content';
+import { content,locale } from '../content';
 import type { SlideDef } from '../content/types.ts';
 import { readParams, type DeckMode, type DeckParams } from './params.ts';
+import {MediaRuntimeProvider} from '../components/MediaRuntime.tsx';
 
 interface DeckConfig {
   params: DeckParams;
@@ -110,6 +111,7 @@ export function DeckProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     const html = document.documentElement;
     html.dataset.mode = mode;
+    html.lang=locale;
     html.dataset.motion = motion;
     html.dataset.audit = params.audit ? 'on' : 'off';
   }, [mode, motion, params.audit]);
@@ -142,6 +144,7 @@ export function DeckProvider({ children }: { children: ReactNode }) {
     const id = slides[index]?.id;
     if (id && decodeURIComponent(window.location.hash.slice(1)) !== id) {
       history.replaceState(null, '', `${window.location.pathname}${window.location.search}#${id}`);
+      window.dispatchEvent(new Event('matai:location'));
     }
   }, [index, slides, mode]);
 
@@ -209,7 +212,7 @@ export function DeckProvider({ children }: { children: ReactNode }) {
   return (
     <ConfigCtx.Provider value={config}>
       <PositionCtx.Provider value={position}>
-        <MotionConfig reducedMotion={config.still ? 'always' : 'user'}>{children}</MotionConfig>
+        <MotionConfig reducedMotion={config.still ? 'always' : 'user'}><MediaRuntimeProvider value={{isPrint:config.isPrint,still:config.still}}>{children}</MediaRuntimeProvider></MotionConfig>
         <div className="sr-only" role="status" aria-live="polite">
           {announcement}
         </div>

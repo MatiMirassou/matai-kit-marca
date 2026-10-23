@@ -1,6 +1,6 @@
 import { createContext, useCallback, useContext, useEffect, useRef, useState, type ReactNode } from 'react';
 import { media, url } from '../lib/media.ts';
-import { content } from '../content';
+import { content,t } from '../content';
 import { Brackets } from './Cinema.tsx';
 
 /**
@@ -102,7 +102,7 @@ export function LightboxProvider({ children }: { children: ReactNode }) {
               <Brackets inset={10} size={16} />
               {entry.kind === 'audio' ? (
                 <div className="relative flex h-full flex-col justify-center p-6">
-                  <img src={url(entry.poster)} alt="Waveform of the actual audio sample" className="h-auto w-full"/>
+                  <img src={url(entry.poster)} alt={t("Waveform of the actual audio sample")} className="h-auto w-full"/>
                   <audio key={current} ref={(el)=>{videoRef.current=el;}} src={src} controls autoPlay onTimeUpdate={e=>setTime(e.currentTarget.currentTime)} className="mt-5 w-full"/>
                 </div>
               ) : <video key={current} ref={(el)=>{videoRef.current=el;}} src={src} poster={url(entry.poster)} controls autoPlay playsInline onTimeUpdate={e=>setTime(e.currentTarget.currentTime)} className="absolute inset-0 h-full w-full object-contain"/>}

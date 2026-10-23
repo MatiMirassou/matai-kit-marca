@@ -34,7 +34,14 @@ async function sameLayoutAndImageBytes(before,after,selector){
  };
  const a=await before.locator(selector).evaluate(describe);
  const b=await after.locator(selector).evaluate(describe);
- if(JSON.stringify(a)!==JSON.stringify(b))return false;
+ if(a.text!==b.text||a.items.length!==b.items.length)return false;
+ // JSX translation wrappers can shift inline text by one 1/64px layout unit.
+ // Preserve all content/styles and compare geometry with a sub-pixel tolerance.
+ for(let i=0;i<a.items.length;i++)for(const key of Object.keys(a.items[i])){
+  const x=a.items[i][key],y=b.items[i][key];
+  if(typeof x==='number'&&typeof y==='number'){if(Math.abs(x-y)>.1)return false;}
+  else if(x!==y)return false;
+ }
  for(const item of a.items.filter(i=>i.image)){
   const original=await readFile(path.join(path.dirname(baseline),'media',item.image));
   const current=await readFile(path.join(projectDir,'public','media',item.image));
@@ -77,7 +84,7 @@ try{
 
  const web=await browser.newPage({viewport:{width:1440,height:810},reducedMotion:'reduce'});
  const errors=[];web.on('pageerror',e=>errors.push(e.message));
- await web.goto(server.url+'/?motion=off',{waitUntil:'load'});
+ await web.goto(server.url+'/en/presentation/?motion=off',{waitUntil:'load'});
  await web.locator('[data-slide="series"]').getByRole('button',{name:'Play Forgotten Fortune',exact:true}).click();
  await web.waitForFunction(()=>document.querySelector('dialog[open] video')?.readyState>=2);
  await web.getByRole('button',{name:'EP 02',exact:true}).click();
@@ -99,7 +106,7 @@ try{
  await web.close();
 
  const mobile=await browser.newPage({viewport:{width:390,height:844},isMobile:true,hasTouch:true,reducedMotion:'reduce'});
- await mobile.goto(server.url+'/?motion=off',{waitUntil:'load'});
+ await mobile.goto(server.url+'/en/presentation/?motion=off',{waitUntil:'load'});
  await mobile.evaluate(async()=>{
   await document.fonts.ready;
   await Promise.all([...document.images].map(i=>{i.loading='eager';return i.decode().catch(()=>{});}));

@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react';
-import { useDeck } from '../deck/DeckProvider.tsx';
+import {t} from '../content/index.ts';
+import { useMediaRuntime } from './MediaRuntime.tsx';
 import { media, url } from '../lib/media.ts';
 import { useLightbox } from './Lightbox.tsx';
 
@@ -10,16 +11,16 @@ export function playbackHref(id: string) {
 
 /** The same thumbnail opens playback on the web and the bundled media in the PDF. */
 export function MediaAction({id,title,children,className='',episodes}:{id:string;title:string;children:ReactNode;className?:string;episodes?:{label:string;media:string}[]}) {
-  const {isPrint}=useDeck();
+  const {isPrint}=useMediaRuntime();
   const {open}=useLightbox();
   const m=media(id);
   const href=playbackHref(id);
   if(!m || !href) return <div className={className}>{children}</div>;
-  if(isPrint || m.kind==='image') return <a href={href} target={isPrint?undefined:'_blank'} rel="noreferrer" className={className} aria-label={m.kind==='image'?'Open '+title:'Play '+title}>{children}</a>;
-  return <button type="button" data-hover-root className={className} onClick={()=>open({title,media:id,episodes})} aria-label={'Play '+title}>{children}</button>;
+  if(isPrint || m.kind==='image') return <a href={href} target={isPrint?undefined:'_blank'} rel="noreferrer" className={className} aria-label={m.kind==='image'?t('Open ')+title:t('Play ')+title}>{children}</a>;
+  return <button type="button" data-hover-root className={className} onClick={()=>open({title,media:id,episodes})} aria-label={t('Play ')+title}>{children}</button>;
 }
 export function PlayLink({id,label='Watch included video'}:{id:string;label?:string}) {
-  const {isPrint}=useDeck();
+  const {isPrint}=useMediaRuntime();
   if(!isPrint) return null;
   const href=playbackHref(id);
   return href?<a href={href} className="media-play-link">{label}</a>:null;

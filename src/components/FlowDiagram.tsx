@@ -4,6 +4,7 @@ import {plain} from '../content/types.ts';
 import {layoutSystem,stages} from '../lib/layout.ts';
 import {NodeGlyph} from './Cinema.tsx';
 import {Txt} from './Txt.tsx';
+import {systems as englishSystems} from '../content/en/systems.ts';
 
 function StepIcon({label}:{label:string}) {
  const l=label.toLowerCase();
@@ -19,15 +20,16 @@ function StepIcon({label}:{label:string}) {
 export function FlowDiagram({system,width=1136,height=280,nodeWidth=124,nodeHeight=96}:{system:ContentSystem;width?:number;height?:number;nodeWidth?:number;nodeHeight?:number}) {
  const layout=useMemo(()=>layoutSystem(system,width,height,nodeWidth,nodeHeight),[system,width,height,nodeWidth,nodeHeight]);
  const [active,setActive]=useState<string|null>(null);
+ const iconLabels=useMemo(()=>new Map(englishSystems.find(s=>s.id===system.id)?.nodes.map(n=>[n.id,n.label])),[system.id]);
  const marker=useId().replace(/:/g,'');
  const u=(n:number)=>'calc(var(--su) * '+n+')';
  return <div className="flow-visual">
   <div className="relative stack:hidden" style={{width:u(width),height:u(height)}}>
    <svg viewBox={'0 0 '+width+' '+height} className="absolute inset-0 h-full w-full overflow-visible" aria-hidden="true"><defs><marker id={marker} viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 1L7 4L0 7" fill="none" stroke="var(--color-stone)" strokeWidth="1.4"/></marker></defs>{layout.edges.map(e=><g key={e.from+'-'+e.to}><path d={e.d} fill="none" stroke="var(--color-stone)" strokeWidth="1.5" markerEnd={'url(#'+marker+')'}/><path d={e.d} fill="none" stroke="var(--color-teal)" strokeOpacity=".75" strokeWidth="1.5" className="edge-flow pdf:hidden"/></g>)}</svg>
-   {system.nodes.map(n=>{const p=layout.nodes.get(n.id)!;return <button type="button" key={n.id} className={'flow-node flow-node-'+n.type} onMouseEnter={()=>setActive(n.id)} onMouseLeave={()=>setActive(null)} onFocus={()=>setActive(n.id)} onBlur={()=>setActive(null)} title={plain(n.detail)} aria-label={n.label+'. '+plain(n.detail)} style={{left:u(p.x-nodeWidth/2),top:u(p.y-nodeHeight/2),width:u(nodeWidth),height:u(nodeHeight)}}><div className="flow-node-top"><StepIcon label={n.label}/><NodeGlyph type={n.type}/></div><strong>{n.label}</strong>{n.tool&&<span>{n.tool}</span>}</button>})}
+   {system.nodes.map(n=>{const p=layout.nodes.get(n.id)!;return <button type="button" key={n.id} className={'flow-node flow-node-'+n.type} onMouseEnter={()=>setActive(n.id)} onMouseLeave={()=>setActive(null)} onFocus={()=>setActive(n.id)} onBlur={()=>setActive(null)} title={plain(n.detail)} aria-label={n.label+'. '+plain(n.detail)} style={{left:u(p.x-nodeWidth/2),top:u(p.y-nodeHeight/2),width:u(nodeWidth),height:u(nodeHeight)}}><div className="flow-node-top"><StepIcon label={iconLabels.get(n.id)??n.label}/><NodeGlyph type={n.type}/></div><strong>{n.label}</strong>{n.tool&&<span>{n.tool}</span>}</button>})}
   </div>
   <p className="flow-detail pdf:hidden" role="status">{active?<Txt c={system.nodes.find(n=>n.id===active)?.detail??''}/>:null}</p>
-  <ol className="hidden stack:grid gap-4">{stages(system).map((group,i)=><li key={i} className="grid gap-3 border-l border-cream/20 pl-4">{group.map(n=><div key={n.id} className={'flow-mobile flow-mobile-'+n.type}><StepIcon label={n.label}/><div><strong><NodeGlyph type={n.type}/> {n.label}</strong>{n.tool&&<span>{n.tool}</span>}</div></div>)}</li>)}</ol>
+  <ol className="hidden stack:grid gap-4">{stages(system).map((group,i)=><li key={i} className="grid gap-3 border-l border-cream/20 pl-4">{group.map(n=><div key={n.id} className={'flow-mobile flow-mobile-'+n.type}><StepIcon label={iconLabels.get(n.id)??n.label}/><div><strong><NodeGlyph type={n.type}/> {n.label}</strong>{n.tool&&<span>{n.tool}</span>}</div></div>)}</li>)}</ol>
  </div>;
 }
 export function FlowChain({system,className=''}:{system:ContentSystem;className?:string}) {

@@ -15,6 +15,7 @@ const argValue = (name) => (args.includes(name) ? args[args.indexOf(name) + 1] :
 const onlyViewport = argValue('--only');
 const onlySlides = argValue('--slides')?.split(',');
 const deck = argValue('--deck') ?? 'full';
+const lang=argValue('--lang')??'en';
 const shots = !args.includes('--no-shots');
 
 const VIEWPORTS = [
@@ -30,7 +31,7 @@ async function printOverflow(browser, base) {
   const page = await browser.newPage({ viewport: { width: 1280, height: 720 }, reducedMotion: 'reduce' });
   const problems = watchPage(page);
   await page.emulateMedia({ media: 'print', reducedMotion: 'reduce' });
-  await page.goto(`${base}/${deck === 'brand' ? 'brand.html?print=1' : `?print=1&deck=${deck}`}`, { waitUntil: 'load' });
+  await page.goto(`${base}/${deck === 'brand' ? 'brand.html?print=1' : `${lang}/presentation/?print=1&deck=${deck}`}`, { waitUntil: 'load' });
   await waitForPrintReady(page);
   const report = await page.evaluate(() => {
     const out = [];
@@ -88,7 +89,7 @@ async function screenshots(browser, base, vp) {
   });
   const page = await context.newPage();
   const problems = watchPage(page);
-  await page.goto(`${base}/?motion=off&deck=${deck}`, { waitUntil: 'load' });
+  await page.goto(`${base}/${lang}/presentation/?motion=off&deck=${deck}`, { waitUntil: 'load' });
   await page.evaluate(() => document.fonts.ready);
   // Fixed on-screen chrome is not part of a slide; keep it out of stitched element screenshots.
   await page.addStyleTag({ content: '.skip-link, .no-print { display: none !important; }' });

@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { content } from '../content';
+import { content,t } from '../content';
 import type { Stat, StatKind, StatViz } from '../content/types.ts';
 import { useDeck } from '../deck/DeckProvider.tsx';
 import { citationNumbers } from '../lib/cite.ts';
@@ -43,7 +43,7 @@ export function KindChips({ kinds, year, className = '' }: { kinds: StatKind[]; 
     <span className={`inline-flex flex-wrap items-center gap-[0.5em] ${className}`}>
       {kinds.map((k) => (
         <span key={k} className="meta rounded-[2px] border hairline px-[0.55em] py-[0.25em] leading-none">
-          {kindLabel[k]}
+          {t(kindLabel[k])}
         </span>
       ))}
       <span className="meta muted">{year}</span>

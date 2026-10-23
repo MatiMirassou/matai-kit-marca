@@ -21,10 +21,13 @@ async function main() {
       const ctx = await browser.newContext({ viewport: { width: 1440, height: 810 }, reducedMotion: 'reduce' });
       const page = await ctx.newPage();
       const problems = watchPage(page);
-      await page.goto(`${base}/?motion=off`, { waitUntil: 'load' });
+      await page.goto(`${base}/en/presentation/?motion=off`, { waitUntil: 'load' });
+      // The static entry shell loads before React installs deck keyboard handlers.
+      // #cover is written by the mounted provider, after child effects run.
+      await page.waitForFunction(() => location.hash === '#cover');
       for (let i = 0; i < 3; i++) {
         await page.keyboard.press('PageDown');
-        await page.waitForTimeout(250);
+        await page.waitForFunction(expected=>location.hash===expected,['#offer','#series','#vertical'][i]);
       }
       check('PageDown ×3 reaches slide 4', (await page.evaluate(() => location.hash)) === '#vertical', await page.evaluate(() => location.hash));
       await page.keyboard.press('End');
@@ -55,7 +58,7 @@ async function main() {
       await page.waitForTimeout(150);
 
       /* Lightbox */
-      await page.goto(`${base}/?motion=off#series`, { waitUntil: 'load' });
+      await page.goto(`${base}/en/presentation/?motion=off#series`, { waitUntil: 'load' });
       await page.waitForTimeout(400);
       const card = page.locator('[data-slide="series"] button[aria-label^="Play"]').first();
       await card.click();
@@ -69,7 +72,7 @@ async function main() {
       check('Escape closes lightbox and returns focus', !(await page.evaluate(() => !!document.querySelector('dialog[open]'))) && focusBack.startsWith('Play'), focusBack);
 
       /* Ads: spot opens in the lightbox */
-      await page.goto(`${base}/?motion=off#ads`, { waitUntil: 'load' });
+      await page.goto(`${base}/en/presentation/?motion=off#ads`, { waitUntil: 'load' });
       await page.waitForTimeout(300);
       await page.locator('[data-slide="ads"] button[aria-label="Play Street interview"]').click();
       await page.waitForTimeout(400);
@@ -79,13 +82,13 @@ async function main() {
       await page.waitForTimeout(250);
 
       /* Series frames are real stills */
-      await page.goto(`${base}/?motion=off#series`, { waitUntil: 'load' });
+      await page.goto(`${base}/en/presentation/?motion=off#series`, { waitUntil: 'load' });
       await page.waitForTimeout(300);
       const posters = await page.locator('[data-slide="series"] .series-poster img').count();
       check('Series slide shows all four completed projects', posters === 4, `${posters} project posters`);
 
       /* System tabs */
-      await page.goto(`${base}/?motion=off#systems`, { waitUntil: 'load' });
+      await page.goto(`${base}/en/presentation/?motion=off#systems`, { waitUntil: 'load' });
       await page.waitForTimeout(300);
       const ids = await page.locator('[role="tab"]').evaluateAll((els) => els.map((e) => e.id));
       const startId = await page.locator('[role="tab"][aria-selected="true"]').getAttribute('id');
@@ -125,14 +128,14 @@ async function main() {
     /* Motion: reduced → no autoplay; allowed → cover loops play */
     {
       const reduced = await browser.newPage({ viewport: { width: 1440, height: 810 }, reducedMotion: 'reduce' });
-      await reduced.goto(`${base}/`, { waitUntil: 'load' });
+      await reduced.goto(`${base}/en/presentation/`, { waitUntil: 'load' });
       await reduced.waitForTimeout(1500);
       const playingReduced = await reduced.evaluate(() => [...document.querySelectorAll('video')].filter((v) => !v.paused).length);
       check('prefers-reduced-motion: no video autoplays', playingReduced === 0, `${playingReduced} playing`);
       await reduced.close();
 
       const motion = await browser.newPage({ viewport: { width: 1440, height: 810 }, reducedMotion: 'no-preference' });
-      await motion.goto(`${base}/?motion=on`, { waitUntil: 'load' });
+      await motion.goto(`${base}/en/presentation/?motion=on`, { waitUntil: 'load' });
       await motion.waitForTimeout(2500);
       const playing = await motion.evaluate(() => [...document.querySelectorAll('video')].filter((v) => !v.paused).length);
       check('Motion allowed: cover loops autoplay (muted)', playing >= 1, `${playing} playing`);

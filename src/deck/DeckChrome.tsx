@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { content } from '../content';
+import { content,t } from '../content';
 import { useDeck, usePosition } from './DeckProvider.tsx';
 
 const pad = (n: number) => String(n).padStart(2, '0');
@@ -109,7 +109,7 @@ export function DeckChrome() {
     <div className="no-print">
       {/* Progress rail */}
       <nav
-        aria-label="Slides"
+        aria-label={t("Slides")}
         className={`fixed right-4 top-1/2 z-40 hidden -translate-y-1/2 flex-col items-end gap-[5px] transition-opacity duration-500 min-[960px]:flex ${hidden ? 'opacity-0' : 'opacity-100'}`}
       >
         {slides.map((s, i) => (
