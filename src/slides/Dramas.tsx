@@ -1,7 +1,7 @@
 import {content} from '../content';
 import {Kicker} from '../components/Cinema.tsx';
 import {Headline} from '../components/Reveal.tsx';
-import {Video} from '../components/Video.tsx';
+import {Still,Video} from '../components/Video.tsx';
 import {Cite,CountUp,StatViz,statById} from '../components/StatFigure.tsx';
 import {MediaAction,PlayLink} from '../components/MediaAction.tsx';
 import {SlideFrame,type SlideProps} from '../deck/SlideFrame.tsx';
@@ -10,11 +10,15 @@ import {PlayGlyph} from './shared.tsx';
 export function Series(props:SlideProps) {
  const c=content.seriesCopy;
  const series=c.series.map(id=>content.projects.find(p=>p.id===id)!);
- return <SlideFrame {...props} className="revised-series" footer={<span>Selected client work for Lingopie / AI-generated casts</span>}><div className="safe">
+ return <SlideFrame {...props} className="revised-series hybrid-series" footer={<span>Selected client work for Lingopie / AI-generated casts</span>}><div className="safe">
   <Kicker className="muted mb-14">Vertical Dramas</Kicker><Headline text={c.headline} className="title text-[calc(var(--su)*52)] stack:text-[36px]"/>
   <div className="series-showcase">{series.map(p=><article key={p.id} className="series-project">
-    <MediaAction id={p.media} title={p.title} episodes={p.episodes} className="series-poster group media-frame"><Video id={p.media} poster={p.keyArt} play="hover" position="50% 30%" fit="contain" alt={p.title+' key art'}/><PlayGlyph/></MediaAction>
-    <h3>{p.title}</h3><p className="series-meta">EP 01 / {formatDuration(media(p.media)?.duration)} / 9:16</p>
+    <MediaAction id={p.media} title={p.title} episodes={p.episodes} className="series-reel group">
+      <span className="series-poster media-frame"><Still id={p.keyArt ?? p.media} fit="contain" alt={p.title+' key art'}/></span>
+      {(p.frames ?? []).slice(0,4).map((id,i)=><span key={id} className="series-shot media-frame">{i===0 ? <Video id={p.media} poster={id} play="hover" alt={p.title+' episode 01 preview'}/> : <Still id={id} alt={`${p.title}, episode 01, frame ${i+1}`}/>}</span>)}
+      <PlayGlyph/>
+    </MediaAction>
+    <div className="series-caption"><h3>{p.title}</h3><p className="series-meta">EP 01 / {formatDuration(media(p.media)?.duration)} / 9:16</p></div>
     <PlayLink id={p.media} label="Watch episode 01"/>
   </article>)}</div>
  </div></SlideFrame>;

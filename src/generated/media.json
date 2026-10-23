@@ -351,7 +351,15 @@
       "loop": 817446,
       "full": 2601858
     },
-    "full": "media/lingopie-ugc/full.mp4"
+    "full": "media/lingopie-ugc/full.mp4",
+    "stills": [
+      {
+        "poster": "media/lingopie-ugc/still-0.jpg",
+        "posterWebp": "media/lingopie-ugc/still-0.webp",
+        "width": 960,
+        "height": 544
+      }
+    ]
   },
   "maid-ep01": {
     "kind": "video",
@@ -559,6 +567,12 @@
       {
         "poster": "media/news-output/still-1.jpg",
         "posterWebp": "media/news-output/still-1.webp",
+        "width": 960,
+        "height": 540
+      },
+      {
+        "poster": "media/news-output/still-2.jpg",
+        "posterWebp": "media/news-output/still-2.webp",
         "width": 960,
         "height": 540
       }

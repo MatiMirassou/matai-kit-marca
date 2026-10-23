@@ -9,18 +9,19 @@ import {useDeck} from '../deck/DeckProvider.tsx';
 import {SlideFrame,type SlideProps} from '../deck/SlideFrame.tsx';
 
 const panels=[
- {media:'ff-ep01',title:'Vertical Dramas',position:'50% 32%'},
- {media:'lingopie-ugc',title:'AI Ads & UGC',position:'52% 40%'},
- {media:'news-output',title:'Content Automation',position:'50% 42%'},
+ {media:'ff-ep01',poster:'ff-ep01@0',title:'Vertical Dramas',position:'48% 28%'},
+ {media:'lingopie-ugc',poster:'lingopie-ugc@0',title:'AI Ads & UGC',position:'51% 35%'},
+ {media:'news-output',poster:'news-output@2',title:'Content Automation',position:'52% 35%'},
 ];
 export function Cover(props:SlideProps) {
  const {params}=useDeck(); const {brand}=content;
- return <SlideFrame {...props} header={false} showFooter={false} className="revised-cover">
-  <div className="cover-panels">{panels.map(p=><div key={p.media} className="cover-panel"><MediaAction id={p.media} title={p.title} className="cover-panel-action"><Video id={p.media} position={p.position} priority alt={p.title}/></MediaAction><div className="cover-shade"/><span className="cover-service">{p.title}</span></div>)}</div>
+ return <SlideFrame {...props} header={false} showFooter={false} className="revised-cover hybrid-cover">
+  <div className="cover-panels">{panels.map(p=><div key={p.media} className="cover-panel"><MediaAction id={p.media} title={p.title} className="cover-panel-action"><Video id={p.media} poster={p.poster} position={p.position} priority alt={p.title}/></MediaAction><div className="cover-shade"/><span className="cover-service">{p.title}</span></div>)}</div>
   <div className="cover-wash"/>
   <Brackets inset={22} size={22} className="stack:hidden"/>
-  <div className="cover-top"><Logo variant="full" tone="dark" className="cover-logo"/>{params.forCompany&&<p className="cover-prepared">{content.ui.preparedFor} {params.forCompany}</p>}</div>
-  <div className="cover-copy"><Headline as="h1" text={brand.taglineMarked} className="display-tight cover-title"/><p>{brand.coverSub}</p></div>
+  <div className="cover-top"><Logo variant="full" tone="dark" className="cover-logo"/><p className="cover-prepared">{params.forCompany ? `${content.ui.preparedFor} ${params.forCompany}` : brand.eyebrow}</p></div>
+  <div className="cover-copy"><Headline as="h1" text={brand.taglineMarked} className="display-tight cover-title"/><p>{brand.coverSub.split(' — by ')[0]}.<span className="cover-byline">By {brand.founder}</span></p></div>
+  <p className="cover-location">{brand.location}<span>{brand.languages}</span></p>
  </SlideFrame>;
 }
 export function Founder(props:SlideProps) {
