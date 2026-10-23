@@ -1,0 +1,973 @@
+{
+  "charsheet": {
+    "kind": "image",
+    "width": 1600,
+    "height": 904,
+    "aspect": "16:9",
+    "poster": "media/charsheet/poster.jpg",
+    "posterWebp": "media/charsheet/poster.webp",
+    "bytes": {
+      "poster": 240154
+    }
+  },
+  "cover-montage": {
+    "kind": "video",
+    "width": 540,
+    "height": 960,
+    "aspect": "9:16",
+    "duration": 10,
+    "hasAudio": false,
+    "poster": "media/cover-montage/poster.jpg",
+    "posterWebp": "media/cover-montage/poster.webp",
+    "loop": "media/cover-montage/loop.mp4",
+    "bytes": {
+      "poster": 48627,
+      "loop": 972175
+    }
+  },
+  "epic-fantasy": {
+    "kind": "video",
+    "width": 1280,
+    "height": 720,
+    "aspect": "16:9",
+    "duration": 26.3,
+    "hasAudio": true,
+    "poster": "media/epic-fantasy/poster.jpg",
+    "posterWebp": "media/epic-fantasy/poster.webp",
+    "loop": "media/epic-fantasy/loop.mp4",
+    "bytes": {
+      "poster": 94415,
+      "loop": 490456,
+      "full": 10177732
+    },
+    "full": "media/epic-fantasy/full.mp4"
+  },
+  "ff-ep01": {
+    "kind": "video",
+    "width": 720,
+    "height": 1280,
+    "aspect": "9:16",
+    "duration": 114.3,
+    "hasAudio": true,
+    "poster": "media/ff-ep01/poster.jpg",
+    "posterWebp": "media/ff-ep01/poster.webp",
+    "loop": "media/ff-ep01/loop.mp4",
+    "bytes": {
+      "poster": 79497,
+      "loop": 823392,
+      "full": 27287276
+    },
+    "full": "media/ff-ep01/full.mp4",
+    "stills": [
+      {
+        "poster": "media/ff-ep01/still-0.jpg",
+        "posterWebp": "media/ff-ep01/still-0.webp",
+        "width": 540,
+        "height": 960
+      },
+      {
+        "poster": "media/ff-ep01/still-1.jpg",
+        "posterWebp": "media/ff-ep01/still-1.webp",
+        "width": 540,
+        "height": 960
+      },
+      {
+        "poster": "media/ff-ep01/still-2.jpg",
+        "posterWebp": "media/ff-ep01/still-2.webp",
+        "width": 540,
+        "height": 960
+      },
+      {
+        "poster": "media/ff-ep01/still-3.jpg",
+        "posterWebp": "media/ff-ep01/still-3.webp",
+        "width": 540,
+        "height": 960
+      },
+      {
+        "poster": "media/ff-ep01/still-4.jpg",
+        "posterWebp": "media/ff-ep01/still-4.webp",
+        "width": 540,
+        "height": 960
+      },
+      {
+        "poster": "media/ff-ep01/still-5.jpg",
+        "posterWebp": "media/ff-ep01/still-5.webp",
+        "width": 540,
+        "height": 960
+      }
+    ]
+  },
+  "ff-ep02": {
+    "kind": "video",
+    "width": 720,
+    "height": 1280,
+    "aspect": "9:16",
+    "duration": 140.9,
+    "hasAudio": true,
+    "poster": "media/ff-ep02/poster.jpg",
+    "posterWebp": "media/ff-ep02/poster.webp",
+    "loop": "media/ff-ep02/loop.mp4",
+    "bytes": {
+      "poster": 80674,
+      "loop": 292681,
+      "full": 30056447
+    },
+    "full": "media/ff-ep02/full.mp4",
+    "stills": [
+      {
+        "poster": "media/ff-ep02/still-0.jpg",
+        "posterWebp": "media/ff-ep02/still-0.webp",
+        "width": 540,
+        "height": 960
+      },
+      {
+        "poster": "media/ff-ep02/still-1.jpg",
+        "posterWebp": "media/ff-ep02/still-1.webp",
+        "width": 540,
+        "height": 960
+      },
+      {
+        "poster": "media/ff-ep02/still-2.jpg",
+        "posterWebp": "media/ff-ep02/still-2.webp",
+        "width": 540,
+        "height": 960
+      }
+    ]
+  },
+  "ff-julian": {
+    "kind": "image",
+    "width": 1200,
+    "height": 678,
+    "aspect": "16:9",
+    "poster": "media/ff-julian/poster.jpg",
+    "posterWebp": "media/ff-julian/poster.webp",
+    "bytes": {
+      "poster": 121897
+    }
+  },
+  "ff-ledger": {
+    "kind": "image",
+    "width": 1000,
+    "height": 564,
+    "aspect": "16:9",
+    "poster": "media/ff-ledger/poster.jpg",
+    "posterWebp": "media/ff-ledger/poster.webp",
+    "bytes": {
+      "poster": 125807
+    }
+  },
+  "ff-mia": {
+    "kind": "image",
+    "width": 1200,
+    "height": 678,
+    "aspect": "16:9",
+    "poster": "media/ff-mia/poster.jpg",
+    "posterWebp": "media/ff-mia/poster.webp",
+    "bytes": {
+      "poster": 171097
+    }
+  },
+  "ff-mix": {
+    "kind": "audio",
+    "width": 1280,
+    "height": 720,
+    "aspect": "audio",
+    "duration": 114.3,
+    "hasAudio": true,
+    "poster": "media/ff-mix/poster.jpg",
+    "posterWebp": "media/ff-mix/poster.webp",
+    "full": "media/ff-mix/full.mp3",
+    "bytes": {
+      "full": 1829897,
+      "poster": 183360
+    }
+  },
+  "ff-office": {
+    "kind": "image",
+    "width": 1000,
+    "height": 562,
+    "aspect": "16:9",
+    "poster": "media/ff-office/poster.jpg",
+    "posterWebp": "media/ff-office/poster.webp",
+    "bytes": {
+      "poster": 175792
+    }
+  },
+  "golden-portrait": {
+    "kind": "video",
+    "width": 1280,
+    "height": 720,
+    "aspect": "16:9",
+    "duration": 8,
+    "hasAudio": false,
+    "poster": "media/golden-portrait/poster.jpg",
+    "posterWebp": "media/golden-portrait/poster.webp",
+    "loop": "media/golden-portrait/loop.mp4",
+    "bytes": {
+      "poster": 110892,
+      "loop": 401943,
+      "full": 1367614
+    },
+    "full": "media/golden-portrait/full.mp4"
+  },
+  "ikea-story": {
+    "kind": "video",
+    "width": 1280,
+    "height": 720,
+    "aspect": "16:9",
+    "duration": 85.7,
+    "hasAudio": true,
+    "poster": "media/ikea-story/poster.jpg",
+    "posterWebp": "media/ikea-story/poster.webp",
+    "loop": "media/ikea-story/loop.mp4",
+    "bytes": {
+      "poster": 152385,
+      "loop": 588895,
+      "full": 23681858
+    },
+    "full": "media/ikea-story/full.mp4",
+    "stills": [
+      {
+        "poster": "media/ikea-story/still-0.jpg",
+        "posterWebp": "media/ikea-story/still-0.webp",
+        "width": 960,
+        "height": 540
+      },
+      {
+        "poster": "media/ikea-story/still-1.jpg",
+        "posterWebp": "media/ikea-story/still-1.webp",
+        "width": 960,
+        "height": 540
+      },
+      {
+        "poster": "media/ikea-story/still-2.jpg",
+        "posterWebp": "media/ikea-story/still-2.webp",
+        "width": 960,
+        "height": 540
+      },
+      {
+        "poster": "media/ikea-story/still-3.jpg",
+        "posterWebp": "media/ikea-story/still-3.webp",
+        "width": 960,
+        "height": 540
+      }
+    ]
+  },
+  "jousting": {
+    "kind": "video",
+    "width": 720,
+    "height": 1280,
+    "aspect": "9:16",
+    "duration": 10,
+    "hasAudio": true,
+    "poster": "media/jousting/poster.jpg",
+    "posterWebp": "media/jousting/poster.webp",
+    "loop": "media/jousting/loop.mp4",
+    "bytes": {
+      "poster": 107474,
+      "loop": 731828,
+      "full": 2628494
+    },
+    "full": "media/jousting/full.mp4"
+  },
+  "keyart-ff": {
+    "kind": "image",
+    "width": 640,
+    "height": 896,
+    "aspect": "5:7",
+    "poster": "media/keyart-ff/poster.jpg",
+    "posterWebp": "media/keyart-ff/poster.webp",
+    "bytes": {
+      "poster": 264459
+    }
+  },
+  "keyart-maid": {
+    "kind": "image",
+    "width": 640,
+    "height": 896,
+    "aspect": "5:7",
+    "poster": "media/keyart-maid/poster.jpg",
+    "posterWebp": "media/keyart-maid/poster.webp",
+    "bytes": {
+      "poster": 96907
+    }
+  },
+  "keyart-msf": {
+    "kind": "image",
+    "width": 640,
+    "height": 896,
+    "aspect": "5:7",
+    "poster": "media/keyart-msf/poster.jpg",
+    "posterWebp": "media/keyart-msf/poster.webp",
+    "bytes": {
+      "poster": 133100
+    }
+  },
+  "keyart-patient": {
+    "kind": "image",
+    "width": 640,
+    "height": 896,
+    "aspect": "5:7",
+    "poster": "media/keyart-patient/poster.jpg",
+    "posterWebp": "media/keyart-patient/poster.webp",
+    "bytes": {
+      "poster": 190628
+    }
+  },
+  "keyart-sew": {
+    "kind": "image",
+    "width": 640,
+    "height": 896,
+    "aspect": "5:7",
+    "poster": "media/keyart-sew/poster.jpg",
+    "posterWebp": "media/keyart-sew/poster.webp",
+    "bytes": {
+      "poster": 140828
+    }
+  },
+  "keyart-vamp": {
+    "kind": "image",
+    "width": 640,
+    "height": 896,
+    "aspect": "5:7",
+    "poster": "media/keyart-vamp/poster.jpg",
+    "posterWebp": "media/keyart-vamp/poster.webp",
+    "bytes": {
+      "poster": 244124
+    }
+  },
+  "lingopie-ugc": {
+    "kind": "video",
+    "width": 1280,
+    "height": 726,
+    "aspect": "16:9",
+    "duration": 8,
+    "hasAudio": false,
+    "poster": "media/lingopie-ugc/poster.jpg",
+    "posterWebp": "media/lingopie-ugc/poster.webp",
+    "loop": "media/lingopie-ugc/loop.mp4",
+    "bytes": {
+      "poster": 209852,
+      "loop": 817446,
+      "full": 2601858
+    },
+    "full": "media/lingopie-ugc/full.mp4"
+  },
+  "maid-ep01": {
+    "kind": "video",
+    "width": 720,
+    "height": 1280,
+    "aspect": "9:16",
+    "duration": 59.6,
+    "hasAudio": true,
+    "poster": "media/maid-ep01/poster.jpg",
+    "posterWebp": "media/maid-ep01/poster.webp",
+    "loop": "media/maid-ep01/loop.mp4",
+    "bytes": {
+      "poster": 73951,
+      "loop": 307070,
+      "full": 8816122
+    },
+    "full": "media/maid-ep01/full.mp4",
+    "stills": [
+      {
+        "poster": "media/maid-ep01/still-0.jpg",
+        "posterWebp": "media/maid-ep01/still-0.webp",
+        "width": 540,
+        "height": 960
+      },
+      {
+        "poster": "media/maid-ep01/still-1.jpg",
+        "posterWebp": "media/maid-ep01/still-1.webp",
+        "width": 540,
+        "height": 960
+      },
+      {
+        "poster": "media/maid-ep01/still-2.jpg",
+        "posterWebp": "media/maid-ep01/still-2.webp",
+        "width": 540,
+        "height": 960
+      },
+      {
+        "poster": "media/maid-ep01/still-3.jpg",
+        "posterWebp": "media/maid-ep01/still-3.webp",
+        "width": 540,
+        "height": 960
+      },
+      {
+        "poster": "media/maid-ep01/still-4.jpg",
+        "posterWebp": "media/maid-ep01/still-4.webp",
+        "width": 540,
+        "height": 960
+      },
+      {
+        "poster": "media/maid-ep01/still-5.jpg",
+        "posterWebp": "media/maid-ep01/still-5.webp",
+        "width": 540,
+        "height": 960
+      },
+      {
+        "poster": "media/maid-ep01/still-6.jpg",
+        "posterWebp": "media/maid-ep01/still-6.webp",
+        "width": 540,
+        "height": 960
+      }
+    ]
+  },
+  "maid-ep02": {
+    "kind": "video",
+    "width": 720,
+    "height": 1280,
+    "aspect": "9:16",
+    "duration": 71.4,
+    "hasAudio": true,
+    "poster": "media/maid-ep02/poster.jpg",
+    "posterWebp": "media/maid-ep02/poster.webp",
+    "loop": "media/maid-ep02/loop.mp4",
+    "bytes": {
+      "poster": 82717,
+      "loop": 325517,
+      "full": 11004413
+    },
+    "full": "media/maid-ep02/full.mp4"
+  },
+  "msf-ep01": {
+    "kind": "video",
+    "width": 720,
+    "height": 1280,
+    "aspect": "9:16",
+    "duration": 80.6,
+    "hasAudio": true,
+    "poster": "media/msf-ep01/poster.jpg",
+    "posterWebp": "media/msf-ep01/poster.webp",
+    "loop": "media/msf-ep01/loop.mp4",
+    "bytes": {
+      "poster": 125769,
+      "loop": 517754,
+      "full": 18351945
+    },
+    "full": "media/msf-ep01/full.mp4",
+    "stills": [
+      {
+        "poster": "media/msf-ep01/still-0.jpg",
+        "posterWebp": "media/msf-ep01/still-0.webp",
+        "width": 540,
+        "height": 960
+      },
+      {
+        "poster": "media/msf-ep01/still-1.jpg",
+        "posterWebp": "media/msf-ep01/still-1.webp",
+        "width": 540,
+        "height": 960
+      },
+      {
+        "poster": "media/msf-ep01/still-2.jpg",
+        "posterWebp": "media/msf-ep01/still-2.webp",
+        "width": 540,
+        "height": 960
+      },
+      {
+        "poster": "media/msf-ep01/still-3.jpg",
+        "posterWebp": "media/msf-ep01/still-3.webp",
+        "width": 540,
+        "height": 960
+      }
+    ]
+  },
+  "neon-night-a": {
+    "kind": "image",
+    "width": 1400,
+    "height": 934,
+    "aspect": "3:2",
+    "poster": "media/neon-night-a/poster.jpg",
+    "posterWebp": "media/neon-night-a/poster.webp",
+    "bytes": {
+      "poster": 426820
+    }
+  },
+  "neon-night-b": {
+    "kind": "image",
+    "width": 1400,
+    "height": 934,
+    "aspect": "3:2",
+    "poster": "media/neon-night-b/poster.jpg",
+    "posterWebp": "media/neon-night-b/poster.webp",
+    "bytes": {
+      "poster": 323638
+    }
+  },
+  "neon-vector": {
+    "kind": "image",
+    "width": 1400,
+    "height": 792,
+    "aspect": "16:9",
+    "poster": "media/neon-vector/poster.jpg",
+    "posterWebp": "media/neon-vector/poster.webp",
+    "bytes": {
+      "poster": 383160
+    }
+  },
+  "neon-zero": {
+    "kind": "image",
+    "width": 1400,
+    "height": 792,
+    "aspect": "16:9",
+    "poster": "media/neon-zero/poster.jpg",
+    "posterWebp": "media/neon-zero/poster.webp",
+    "bytes": {
+      "poster": 414448
+    }
+  },
+  "news-audio": {
+    "kind": "audio",
+    "width": 1280,
+    "height": 720,
+    "aspect": "audio",
+    "duration": 257.5,
+    "hasAudio": true,
+    "poster": "media/news-audio/poster.jpg",
+    "posterWebp": "media/news-audio/poster.webp",
+    "full": "media/news-audio/full.mp3",
+    "bytes": {
+      "full": 4141136,
+      "poster": 240649
+    }
+  },
+  "news-output": {
+    "kind": "video",
+    "width": 1280,
+    "height": 720,
+    "aspect": "16:9",
+    "duration": 74.3,
+    "hasAudio": true,
+    "poster": "media/news-output/poster.jpg",
+    "posterWebp": "media/news-output/poster.webp",
+    "loop": "media/news-output/loop.mp4",
+    "bytes": {
+      "poster": 184450,
+      "loop": 460161,
+      "full": 12651268
+    },
+    "full": "media/news-output/full.mp4",
+    "stills": [
+      {
+        "poster": "media/news-output/still-0.jpg",
+        "posterWebp": "media/news-output/still-0.webp",
+        "width": 960,
+        "height": 540
+      },
+      {
+        "poster": "media/news-output/still-1.jpg",
+        "posterWebp": "media/news-output/still-1.webp",
+        "width": 960,
+        "height": 540
+      }
+    ]
+  },
+  "news-show": {
+    "kind": "video",
+    "width": 1280,
+    "height": 720,
+    "aspect": "16:9",
+    "duration": 68.5,
+    "hasAudio": true,
+    "poster": "media/news-show/poster.jpg",
+    "posterWebp": "media/news-show/poster.webp",
+    "loop": "media/news-show/loop.mp4",
+    "bytes": {
+      "poster": 276121,
+      "loop": 455564,
+      "full": 11998035
+    },
+    "full": "media/news-show/full.mp4",
+    "stills": [
+      {
+        "poster": "media/news-show/still-0.jpg",
+        "posterWebp": "media/news-show/still-0.webp",
+        "width": 960,
+        "height": 540
+      },
+      {
+        "poster": "media/news-show/still-1.jpg",
+        "posterWebp": "media/news-show/still-1.webp",
+        "width": 960,
+        "height": 540
+      },
+      {
+        "poster": "media/news-show/still-2.jpg",
+        "posterWebp": "media/news-show/still-2.webp",
+        "width": 960,
+        "height": 540
+      },
+      {
+        "poster": "media/news-show/still-3.jpg",
+        "posterWebp": "media/news-show/still-3.webp",
+        "width": 960,
+        "height": 540
+      }
+    ]
+  },
+  "patient-ep01": {
+    "kind": "video",
+    "width": 720,
+    "height": 1280,
+    "aspect": "9:16",
+    "duration": 66.9,
+    "hasAudio": true,
+    "poster": "media/patient-ep01/poster.jpg",
+    "posterWebp": "media/patient-ep01/poster.webp",
+    "loop": "media/patient-ep01/loop.mp4",
+    "bytes": {
+      "poster": 70602,
+      "loop": 525530,
+      "full": 14861941
+    },
+    "full": "media/patient-ep01/full.mp4",
+    "stills": [
+      {
+        "poster": "media/patient-ep01/still-0.jpg",
+        "posterWebp": "media/patient-ep01/still-0.webp",
+        "width": 540,
+        "height": 960
+      },
+      {
+        "poster": "media/patient-ep01/still-1.jpg",
+        "posterWebp": "media/patient-ep01/still-1.webp",
+        "width": 540,
+        "height": 960
+      },
+      {
+        "poster": "media/patient-ep01/still-2.jpg",
+        "posterWebp": "media/patient-ep01/still-2.webp",
+        "width": 540,
+        "height": 960
+      },
+      {
+        "poster": "media/patient-ep01/still-3.jpg",
+        "posterWebp": "media/patient-ep01/still-3.webp",
+        "width": 540,
+        "height": 960
+      }
+    ]
+  },
+  "podcast-a": {
+    "kind": "video",
+    "width": 1280,
+    "height": 720,
+    "aspect": "16:9",
+    "duration": 15.1,
+    "hasAudio": true,
+    "poster": "media/podcast-a/poster.jpg",
+    "posterWebp": "media/podcast-a/poster.webp",
+    "loop": "media/podcast-a/loop.mp4",
+    "bytes": {
+      "poster": 217193,
+      "loop": 424986,
+      "full": 3188161
+    },
+    "full": "media/podcast-a/full.mp4"
+  },
+  "podcast-b": {
+    "kind": "video",
+    "width": 1280,
+    "height": 720,
+    "aspect": "16:9",
+    "duration": 30.1,
+    "hasAudio": true,
+    "poster": "media/podcast-b/poster.jpg",
+    "posterWebp": "media/podcast-b/poster.webp",
+    "loop": "media/podcast-b/loop.mp4",
+    "bytes": {
+      "poster": 193210,
+      "loop": 422391,
+      "full": 5955159
+    },
+    "full": "media/podcast-b/full.mp4"
+  },
+  "podcast-c": {
+    "kind": "video",
+    "width": 1280,
+    "height": 720,
+    "aspect": "16:9",
+    "duration": 30.1,
+    "hasAudio": true,
+    "poster": "media/podcast-c/poster.jpg",
+    "posterWebp": "media/podcast-c/poster.webp",
+    "loop": "media/podcast-c/loop.mp4",
+    "bytes": {
+      "poster": 240432,
+      "loop": 387639,
+      "full": 5358390
+    },
+    "full": "media/podcast-c/full.mp4"
+  },
+  "podcast-still-a": {
+    "kind": "image",
+    "width": 1600,
+    "height": 904,
+    "aspect": "16:9",
+    "poster": "media/podcast-still-a/poster.jpg",
+    "posterWebp": "media/podcast-still-a/poster.webp",
+    "bytes": {
+      "poster": 241278
+    }
+  },
+  "podcast-still-b": {
+    "kind": "image",
+    "width": 1600,
+    "height": 904,
+    "aspect": "16:9",
+    "poster": "media/podcast-still-b/poster.jpg",
+    "posterWebp": "media/podcast-still-b/poster.webp",
+    "bytes": {
+      "poster": 275886
+    }
+  },
+  "portrait-hero": {
+    "kind": "image",
+    "width": 1400,
+    "height": 1400,
+    "aspect": "1:1",
+    "poster": "media/portrait-hero/poster.jpg",
+    "posterWebp": "media/portrait-hero/poster.webp",
+    "bytes": {
+      "poster": 316353
+    }
+  },
+  "portrait-studio": {
+    "kind": "image",
+    "width": 1400,
+    "height": 1400,
+    "aspect": "1:1",
+    "poster": "media/portrait-studio/poster.jpg",
+    "posterWebp": "media/portrait-studio/poster.webp",
+    "bytes": {
+      "poster": 368081
+    }
+  },
+  "ronin": {
+    "kind": "video",
+    "width": 1280,
+    "height": 720,
+    "aspect": "16:9",
+    "duration": 20.6,
+    "hasAudio": true,
+    "poster": "media/ronin/poster.jpg",
+    "posterWebp": "media/ronin/poster.webp",
+    "loop": "media/ronin/loop.mp4",
+    "bytes": {
+      "poster": 125991,
+      "loop": 486048,
+      "full": 6677095
+    },
+    "full": "media/ronin/full.mp4"
+  },
+  "seedance-action": {
+    "kind": "video",
+    "width": 1280,
+    "height": 720,
+    "aspect": "16:9",
+    "duration": 15.1,
+    "hasAudio": true,
+    "poster": "media/seedance-action/poster.jpg",
+    "posterWebp": "media/seedance-action/poster.webp",
+    "loop": "media/seedance-action/loop.mp4",
+    "bytes": {
+      "poster": 119323,
+      "loop": 1266691,
+      "full": 5582144
+    },
+    "full": "media/seedance-action/full.mp4"
+  },
+  "seedance-neon": {
+    "kind": "video",
+    "width": 1280,
+    "height": 720,
+    "aspect": "16:9",
+    "duration": 8.1,
+    "hasAudio": true,
+    "poster": "media/seedance-neon/poster.jpg",
+    "posterWebp": "media/seedance-neon/poster.webp",
+    "loop": "media/seedance-neon/loop.mp4",
+    "bytes": {
+      "poster": 114279,
+      "loop": 363712,
+      "full": 1405767
+    },
+    "full": "media/seedance-neon/full.mp4"
+  },
+  "seedance-statue": {
+    "kind": "video",
+    "width": 720,
+    "height": 1280,
+    "aspect": "9:16",
+    "duration": 15.1,
+    "hasAudio": true,
+    "poster": "media/seedance-statue/poster.jpg",
+    "posterWebp": "media/seedance-statue/poster.webp",
+    "loop": "media/seedance-statue/loop.mp4",
+    "bytes": {
+      "poster": 154960,
+      "loop": 647206,
+      "full": 3136927
+    },
+    "full": "media/seedance-statue/full.mp4"
+  },
+  "sew-ep01": {
+    "kind": "video",
+    "width": 720,
+    "height": 1280,
+    "aspect": "9:16",
+    "duration": 109.1,
+    "hasAudio": true,
+    "poster": "media/sew-ep01/poster.jpg",
+    "posterWebp": "media/sew-ep01/poster.webp",
+    "loop": "media/sew-ep01/loop.mp4",
+    "bytes": {
+      "poster": 125770,
+      "loop": 1036951,
+      "full": 23906518
+    },
+    "full": "media/sew-ep01/full.mp4",
+    "stills": [
+      {
+        "poster": "media/sew-ep01/still-0.jpg",
+        "posterWebp": "media/sew-ep01/still-0.webp",
+        "width": 540,
+        "height": 960
+      },
+      {
+        "poster": "media/sew-ep01/still-1.jpg",
+        "posterWebp": "media/sew-ep01/still-1.webp",
+        "width": 540,
+        "height": 960
+      },
+      {
+        "poster": "media/sew-ep01/still-2.jpg",
+        "posterWebp": "media/sew-ep01/still-2.webp",
+        "width": 540,
+        "height": 960
+      },
+      {
+        "poster": "media/sew-ep01/still-3.jpg",
+        "posterWebp": "media/sew-ep01/still-3.webp",
+        "width": 540,
+        "height": 960
+      }
+    ]
+  },
+  "tutorial": {
+    "kind": "video",
+    "width": 1280,
+    "height": 720,
+    "aspect": "16:9",
+    "duration": 30,
+    "hasAudio": true,
+    "poster": "media/tutorial/poster.jpg",
+    "posterWebp": "media/tutorial/poster.webp",
+    "loop": "media/tutorial/loop.mp4",
+    "bytes": {
+      "poster": 156333,
+      "loop": 705778,
+      "full": 8983434
+    },
+    "full": "media/tutorial/full.mp4",
+    "stills": [
+      {
+        "poster": "media/tutorial/still-0.jpg",
+        "posterWebp": "media/tutorial/still-0.webp",
+        "width": 960,
+        "height": 540
+      },
+      {
+        "poster": "media/tutorial/still-1.jpg",
+        "posterWebp": "media/tutorial/still-1.webp",
+        "width": 960,
+        "height": 540
+      },
+      {
+        "poster": "media/tutorial/still-2.jpg",
+        "posterWebp": "media/tutorial/still-2.webp",
+        "width": 960,
+        "height": 540
+      }
+    ]
+  },
+  "vamp-ep01": {
+    "kind": "video",
+    "width": 720,
+    "height": 1280,
+    "aspect": "9:16",
+    "duration": 65.4,
+    "hasAudio": true,
+    "poster": "media/vamp-ep01/poster.jpg",
+    "posterWebp": "media/vamp-ep01/poster.webp",
+    "loop": "media/vamp-ep01/loop.mp4",
+    "bytes": {
+      "poster": 153753,
+      "loop": 859794,
+      "full": 17594765
+    },
+    "full": "media/vamp-ep01/full.mp4",
+    "stills": [
+      {
+        "poster": "media/vamp-ep01/still-0.jpg",
+        "posterWebp": "media/vamp-ep01/still-0.webp",
+        "width": 540,
+        "height": 960
+      },
+      {
+        "poster": "media/vamp-ep01/still-1.jpg",
+        "posterWebp": "media/vamp-ep01/still-1.webp",
+        "width": 540,
+        "height": 960
+      },
+      {
+        "poster": "media/vamp-ep01/still-2.jpg",
+        "posterWebp": "media/vamp-ep01/still-2.webp",
+        "width": 540,
+        "height": 960
+      },
+      {
+        "poster": "media/vamp-ep01/still-3.jpg",
+        "posterWebp": "media/vamp-ep01/still-3.webp",
+        "width": 540,
+        "height": 960
+      }
+    ]
+  },
+  "vamp-ep02": {
+    "kind": "video",
+    "width": 720,
+    "height": 1280,
+    "aspect": "9:16",
+    "duration": 68.5,
+    "hasAudio": true,
+    "poster": "media/vamp-ep02/poster.jpg",
+    "posterWebp": "media/vamp-ep02/poster.webp",
+    "loop": "media/vamp-ep02/loop.mp4",
+    "bytes": {
+      "poster": 135902,
+      "loop": 457409,
+      "full": 12027369
+    },
+    "full": "media/vamp-ep02/full.mp4"
+  },
+  "weather-ba": {
+    "kind": "video",
+    "width": 1280,
+    "height": 720,
+    "aspect": "16:9",
+    "duration": 8,
+    "hasAudio": true,
+    "poster": "media/weather-ba/poster.jpg",
+    "posterWebp": "media/weather-ba/poster.webp",
+    "loop": "media/weather-ba/loop.mp4",
+    "bytes": {
+      "poster": 190568,
+      "loop": 696575,
+      "full": 2143586
+    },
+    "full": "media/weather-ba/full.mp4"
+  }
+}

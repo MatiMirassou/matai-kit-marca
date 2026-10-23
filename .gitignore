@@ -1,0 +1,24 @@
+node_modules/
+dist/
+qa/
+.media-cache/
+exports/
+*.log
+
+# Client footage, artwork, production evidence and local source locations.
+public/media/
+media.sources.json
+SOURCE_REFERENCES.md
+ASSETS_OR_INFO_NEEDED.md
+
+# Credentials and machine-local configuration must never be published.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+.npmrc
+.DS_Store
+Thumbs.db

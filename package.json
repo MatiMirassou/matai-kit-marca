@@ -1,0 +1,48 @@
+{
+  "name": "matai-capabilities-deck",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Mat.AI — interactive brand & capabilities presentation with PDF export",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test \"scripts/tests/*.test.ts\"",
+    "media": "node scripts/media.mjs",
+    "media:sheets": "node scripts/media.mjs --sheets",
+    "check:content": "node scripts/check-content.ts",
+    "qa": "node scripts/qa.mjs",
+    "smoke": "node scripts/smoke.mjs",
+    "export:pdf": "node scripts/export-pdf.mjs",
+    "export:pdf:all": "node scripts/export-pdf.mjs --all",
+    "pdf:preview": "node scripts/pdf-preview.mjs",
+    "verify": "npm run check:content && npm test && npm run build && npm run qa -- --no-shots && npm run qa -- --no-shots --deck brand && npm run smoke",
+    "logo": "node scripts/logo.mjs",
+    "export:brand": "node scripts/export-pdf.mjs --brand"
+  },
+  "dependencies": {
+    "@fontsource-variable/archivo": "5.3.0",
+    "@fontsource/ibm-plex-mono": "5.3.0",
+    "@fontsource/newsreader": "5.3.0",
+    "motion": "14.1.0",
+    "qrcode": "1.5.4",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "4.3.3",
+    "@types/node": "26.6.5",
+    "@types/qrcode": "1.5.6",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "6.1.2",
+    "pdfjs-dist": "6.4.299",
+    "playwright-core": "1.64.0",
+    "potrace": "2.1.8",
+    "tailwindcss": "4.3.3",
+    "typescript": "6.0.3",
+    "vite": "8.3.4"
+  }
+}

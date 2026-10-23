@@ -1,0 +1,41 @@
+import {content} from '../content';
+import {Brackets,Kicker} from '../components/Cinema.tsx';
+import {Logo} from '../components/Logo.tsx';
+import {Headline,Reveal} from '../components/Reveal.tsx';
+import {Txt} from '../components/Txt.tsx';
+import {Still,Video} from '../components/Video.tsx';
+import {MediaAction} from '../components/MediaAction.tsx';
+import {useDeck} from '../deck/DeckProvider.tsx';
+import {SlideFrame,type SlideProps} from '../deck/SlideFrame.tsx';
+
+const panels=[
+ {media:'ff-ep01',title:'Vertical Dramas',position:'50% 32%'},
+ {media:'lingopie-ugc',title:'AI Ads & UGC',position:'52% 40%'},
+ {media:'news-output',title:'Content Automation',position:'50% 42%'},
+];
+export function Cover(props:SlideProps) {
+ const {params}=useDeck(); const {brand}=content;
+ return <SlideFrame {...props} header={false} showFooter={false} className="revised-cover">
+  <div className="cover-panels">{panels.map(p=><div key={p.media} className="cover-panel"><MediaAction id={p.media} title={p.title} className="cover-panel-action"><Video id={p.media} position={p.position} priority alt={p.title}/></MediaAction><div className="cover-shade"/><span className="cover-service">{p.title}</span></div>)}</div>
+  <div className="cover-wash"/>
+  <Brackets inset={22} size={22} className="stack:hidden"/>
+  <div className="cover-top"><Logo variant="full" tone="dark" className="cover-logo"/>{params.forCompany&&<p className="cover-prepared">{content.ui.preparedFor} {params.forCompany}</p>}</div>
+  <div className="cover-copy"><Headline as="h1" text={brand.taglineMarked} className="display-tight cover-title"/><p>{brand.coverSub}</p></div>
+ </SlideFrame>;
+}
+export function Founder(props:SlideProps) {
+ const f=content.founder;
+ return <SlideFrame {...props} className="revised-founder"><div className="safe founder-layout">
+  <div className="founder-portrait"><div className="media-frame"><Still id={f.portrait.media} alt={f.portrait.alt} position="50% 35%"/></div><p>{f.portrait.caption}</p></div>
+  <div className="founder-bio"><Kicker className="muted">{f.role}</Kicker><Headline text={f.headline} className="title"/><p className="founder-body"><Txt c={f.bio}/></p><h3>Selected credits</h3><ul>{f.credits.map(c=><li key={c.title}><em>{c.title}</em><span><Txt c={c.detail}/></span></li>)}</ul><p className="founder-skills">{f.skills.join(' / ')}</p></div>
+  <div className="founder-timeline"><h3>Experience</h3><ol>{f.timeline.map((t,i)=><li key={i}><span>{t.year}</span><strong><Txt c={t.title}/></strong><p><Txt c={t.detail}/></p></li>)}</ol></div>
+ </div></SlideFrame>;
+}
+export function Offer(props:SlideProps) {
+ const c=content.offerCopy;
+ return <SlideFrame {...props} className="revised-offer"><div className="safe">
+  <Kicker className="muted mb-16">{c.kicker}</Kicker><Headline text={c.headline} className="title offer-title"/>
+  <div className="solution-grid">{content.services.map(s=><Reveal key={s.id} className="solution"><div className="solution-image media-frame">{s.media&&<Still id={s.media} alt={s.name} position="50% 35%"/>}</div><div className="solution-title"><span>{s.n}</span><h3>{s.name}</h3></div><p>{s.line}</p><ul>{s.points.map(p=><li key={p}>{p}</li>)}</ul></Reveal>)}</div>
+  <p className="solution-note">{c.loop}</p>
+ </div></SlideFrame>;
+}
