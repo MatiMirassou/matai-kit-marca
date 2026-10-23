@@ -1,0 +1,2 @@
+# Keep the approved media byte-identical across Windows and Netlify/Linux.
+public/media/** -text

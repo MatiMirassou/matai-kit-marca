@@ -33,6 +33,6 @@ Use `npm run test:showcase`, `npm test`, `npm run qa -- --no-shots`, `npm run qa
 
 Verified locally: 39 showcase browser checks, 25 deck interaction checks, 10 unit tests, zero print overflow in either presentation language or the six-page brand guide. The hybrid preservation check passes for all nine unchanged English slide compositions, source image bytes, playback and the three previously revised mobile slides.
 
-## Deferred to deployment discussion
+## Netlify-only media launch
 
-Hosting-account setup, DNS and public media uploads remain separate from the source-code push. Authorized client media remains outside Git. A fresh clone can build the page structure but needs an agreed media delivery solution before a complete public launch. The source repository being public does not grant reuse rights to client work or the Mat.AI identity.
+The owner requested direct Netlify media delivery, using existing files without further video optimization. The exact 130-file selection (about 188 MB) is tracked under `public/media/`, restricted by the `.gitignore` allowlist, and fingerprinted in `public-media.lock.json`. The build verifies file availability and hashes. No original production files or unused full videos are included. No external media service is configured or required for this launch. Seven files exceed Netlify's published 10 MB CDN guidance and are intentionally being tried as-is; inspect the actual deployment for acceptance and playback. The source repository being public does not grant reuse rights to client work or the Mat.AI identity.

@@ -14,11 +14,11 @@ A bilingual public showcase and a separate interactive capabilities presentation
 
 ## Public repository and version history
 
-This repository contains the presentation's editable code, copy, vector logo and media manifest. Client footage, photographs, artwork, audio, subtitle files, PDF/ZIP exports, local media-source paths and internal production notes are intentionally excluded. Public visibility is not a grant of rights to the Mat.AI identity or third-party/client work.
+This repository contains the presentation's editable code, copy, vector logo, media manifest and the selected web media approved for the Netlify-only launch. Original production files, unused media, PDF/ZIP exports, local media-source paths and internal production notes remain excluded. Public visibility is not a grant of rights to the Mat.AI identity or third-party/client work.
 
 Git history starts with the current revised edition on **23 October 2026**. It does not contain the earlier interactive version. The original **12 October PDF** remains in the owner's local `exports/` directory, outside Git.
 
-A fresh clone can build the application, but it will not display or play the excluded media. For the complete local presentation, restore the owner's authorized media folder to `public/media/`. Regenerating media also requires the owner's local, untracked `media.sources.json` and access to the source files. Do not upload those files without a separate rights review.
+A fresh clone includes the assets needed by the showcase, presentation and visual brand guide. `public-media.lock.json` records the exact public files and their SHA-256 hashes; `npm run check:media` verifies them before the build. Regenerating media still requires the owner's local, untracked `media.sources.json` and access to the original source files. Do not upload additional material without review.
 
 For future changes, commit a known-good version first, work on a separate branch, and review the staged changes before pushing. Keeping files out of later commits does not remove them from earlier public Git history.
 
@@ -35,12 +35,13 @@ Open http://localhost:5180/en/ (showcase) or http://localhost:5180/en/presentati
 
 ### Netlify
 
-Connect this repository and select `main` as the production branch. The checked-in `netlify.toml` sets Node 24, build command `npm run build`, and publish directory `dist`; leave the base directory empty. Both public layouts deploy together. Known routes are pre-rendered as static directory pages. Videos, posters, stills and audio remain excluded from Git and must be connected to an approved media host before the site is ready to share.
+Connect this repository and select `main` as the production branch. The checked-in `netlify.toml` sets Node 24, build command `npm run build`, and publish directory `dist`; leave the base directory empty. Both public layouts deploy together. Known routes are pre-rendered as static directory pages. Selected videos, previews, posters, stills and audio are included in `public/media/` and served directly by Netlify; no separate media provider is required. Existing video files are being tried unchanged, without a new encoding/optimization pass.
 
 | Command | What it does |
 |---|---|
 | `npm run dev` | Live-reloading dev server |
 | `npm run build` | Type-check, client build and pre-rendered EN/ES showcase/project HTML into `dist/` |
+| `npm run check:media` | Verify the public media allowlist, file availability and unchanged hashes |
 | `npm run test:showcase` | Desktop/mobile navigation, language, filters, media and static HTML checks |
 | `npm run qa -- --no-shots --lang es` | Spanish presentation print-overflow checks |
 | `npm run export:pdf` | Build first, then export the capabilities deck PDF |
@@ -168,7 +169,7 @@ Originals are never modified. `npm run media` reads the owner's untracked **`med
 - Unchanged items are skipped. Use `--force` to rebuild, or `--only id1,id2`.
 - `npm run media:sheets` writes contact sheets to `.media-cache/sheets/`. Use them to pick `loop.start` and `poster.at` times.
 
-**Size:** about 185 MB of web media in total; the largest file is about 24 MB (a full episode). Full episodes load only when opened.
+**Published selection:** 130 files, about 188 MB (179.5 MiB), including 13 full videos, 13 preview loops and two audio files. The largest file is about 30 MB. Full episodes load only when opened. Seven files exceed Netlify's published 10 MB CDN guidance; the owner requested trying these existing files as-is. Watch the deployment log and bandwidth usage before expanding the library.
 
 ---
 
@@ -237,7 +238,7 @@ Run `npm run check:content` for the full list. Highlights:
 
 ## Deploying
 
-`npm run build` produces a static `dist/` folder that works from any host or sub-folder (Vercel, Netlify, S3, GitHub Pages). Check your host's per-file size limit for the full episodes (up to about 24 MB each).
+`npm run build` produces a static `dist/` folder for root-domain hosting, with pre-rendered EN/ES routes and the selected public media. Netlify configuration is checked in. Keep generated builds, original production files and unused media out of Git. Check deployment logs for the larger, unchanged full-episode files.
 ## Final capabilities revision — 19 October 2026
 
 The current commercial edition has **12 pages**. See REVISION_CHANGELOG.md for the original-to-new page mapping. Research/production evidence and unresolved asset notes remain in the owner's untracked SOURCE_REFERENCES.md and ASSETS_OR_INFO_NEEDED.md files.

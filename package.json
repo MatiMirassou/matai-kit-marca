@@ -6,7 +6,8 @@
   "description": "Mat.AI — interactive brand & capabilities presentation with PDF export",
   "scripts": {
     "dev": "vite",
-    "build": "tsc --noEmit && vite build && vite build --ssr src/showcase/prerender.tsx --outDir .site-render && node scripts/prerender.mjs",
+    "build": "tsc --noEmit && node scripts/public-media.mjs && vite build && vite build --ssr src/showcase/prerender.tsx --outDir .site-render && node scripts/prerender.mjs",
+    "check:media": "node scripts/public-media.mjs",
     "test:showcase": "node scripts/showcase-qa.mjs",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",

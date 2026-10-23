@@ -1,0 +1,687 @@
+{
+  "files": [
+    {
+      "file": "public/media/ff-ep01/full.mp4",
+      "bytes": 27287276,
+      "sha256": "4fa063aa450814237f005172367122c924dd135f79f026729291eaa7408226d8"
+    },
+    {
+      "file": "public/media/ff-ep01/loop.mp4",
+      "bytes": 823392,
+      "sha256": "b45b25e2754f4fc4a8751f4825a5eac358650f4f5e1d4fe7d3eae71ebc2b3a08"
+    },
+    {
+      "file": "public/media/ff-ep01/poster.jpg",
+      "bytes": 79497,
+      "sha256": "bab9f0e70fc18086630dab2a18cb267399529185b99d24c67b1d97c1ce2e8503"
+    },
+    {
+      "file": "public/media/ff-ep01/poster.webp",
+      "bytes": 27026,
+      "sha256": "45daf12583495857904f257da6be3859df4b34366becd6131de692aff2aabb66"
+    },
+    {
+      "file": "public/media/ff-ep01/still-0.jpg",
+      "bytes": 41676,
+      "sha256": "4a1c16bd7c76ce71deb08f43922d90234298d134fc14145fa9f9859bb3a902ba"
+    },
+    {
+      "file": "public/media/ff-ep01/still-0.webp",
+      "bytes": 18356,
+      "sha256": "b5a729426cae8cf292748666072bee5c780810aa4a61ae4d69d0c484cffd022c"
+    },
+    {
+      "file": "public/media/ff-ep01/still-1.jpg",
+      "bytes": 40651,
+      "sha256": "d60654de14cc2852ed55a25e770fc64bed01b373589a4d6eaeef7d0d9ea585f9"
+    },
+    {
+      "file": "public/media/ff-ep01/still-1.webp",
+      "bytes": 17540,
+      "sha256": "a54a817102048b9fbcc4930acdfc20a7f39a538ac5f19d7f3627e71490cff5d0"
+    },
+    {
+      "file": "public/media/ff-ep01/still-2.jpg",
+      "bytes": 40999,
+      "sha256": "9f6620db02ba1f582606c691fed7ba954056293d8c516aae83f64a281df0839f"
+    },
+    {
+      "file": "public/media/ff-ep01/still-2.webp",
+      "bytes": 18148,
+      "sha256": "724a31f78a7c1563bb93459ae7e28c990e064d29fabf0187448e4e3c7daf801a"
+    },
+    {
+      "file": "public/media/ff-ep01/still-3.jpg",
+      "bytes": 44386,
+      "sha256": "7e7441ac00c7ab2f25eb311e7dc63f716aca841c0cd25beae78c0d6922512cb8"
+    },
+    {
+      "file": "public/media/ff-ep01/still-3.webp",
+      "bytes": 19226,
+      "sha256": "799dea59decae0e3179c519fea8c53fe191f62c9c4db6cd64141f7ef1b3c354f"
+    },
+    {
+      "file": "public/media/ff-ep01/still-4.jpg",
+      "bytes": 37530,
+      "sha256": "2a1765fb8977fc7cb8439088ca2649a3a6d582daf3fdb9b1a5dff0df87cf2a9c"
+    },
+    {
+      "file": "public/media/ff-ep01/still-4.webp",
+      "bytes": 16224,
+      "sha256": "9626df5eb0fd6a0519b417f13ef200bc82afbc7740906b28a67c5b0c85444714"
+    },
+    {
+      "file": "public/media/ff-ep01/still-5.jpg",
+      "bytes": 38457,
+      "sha256": "a53c732ce9f76e92597a6155d8c472c7148c765f1eafd061b7767de9d1141c8d"
+    },
+    {
+      "file": "public/media/ff-ep01/still-5.webp",
+      "bytes": 16846,
+      "sha256": "fb41471efbe06b18bc64e68db1d1508d30b11d9840d5899298c79a4a0bec1d53"
+    },
+    {
+      "file": "public/media/ff-ep02/full.mp4",
+      "bytes": 30056447,
+      "sha256": "364fa899d43745393e9dd7b946c8d9dea7f556527afc534128606b3b6fb01655"
+    },
+    {
+      "file": "public/media/ff-ep02/loop.mp4",
+      "bytes": 292681,
+      "sha256": "7c8a03de8c4c8300a1d5b4632af89f472af7196a0d8d427c997f3dfcf08755d1"
+    },
+    {
+      "file": "public/media/ff-ep02/poster.jpg",
+      "bytes": 80674,
+      "sha256": "0d10e55ae3fabb84aff42c0817ee56367fdd771d5bbbbe049758cd3c39721e54"
+    },
+    {
+      "file": "public/media/ff-ep02/poster.webp",
+      "bytes": 27354,
+      "sha256": "286a082e48120324299df39d5d6d813d8e53e340251baa26d46e3f3fb87926a3"
+    },
+    {
+      "file": "public/media/ff-julian/poster.jpg",
+      "bytes": 121897,
+      "sha256": "e0f0d0c6c0dfe072cca1ee1fb82ce148c63e57885a28c3ab6353c5b2fc627c20"
+    },
+    {
+      "file": "public/media/ff-julian/poster.webp",
+      "bytes": 52274,
+      "sha256": "58a86ba0f2c0ace3ae1714f388953680ffc4131bd7f6e2e9c11b98d5e8bbff25"
+    },
+    {
+      "file": "public/media/ff-ledger/poster.jpg",
+      "bytes": 125807,
+      "sha256": "7269ffb06cd85a22ecf3fc029ed8568f3315533573ba0a6e958f77609f6b7f7e"
+    },
+    {
+      "file": "public/media/ff-ledger/poster.webp",
+      "bytes": 45150,
+      "sha256": "a6d848e3c66cb21e384920877ced7fd0c53824ec9e00439e31f15a84cd4e0c5d"
+    },
+    {
+      "file": "public/media/ff-mia/poster.jpg",
+      "bytes": 171097,
+      "sha256": "37d3c7738d323639b409f277896a68cd1682e976d85644f09d41d5644bc3003b"
+    },
+    {
+      "file": "public/media/ff-mia/poster.webp",
+      "bytes": 79040,
+      "sha256": "8ed084a4d6b4f33e180627a2e0945165a14056b99dd7538b20984855c6dddcbf"
+    },
+    {
+      "file": "public/media/ff-mix/full.mp3",
+      "bytes": 1829897,
+      "sha256": "d2efce5140139ee1cb3804c589f6e81fd5fc9a693773dbc0fcc0d21f8d082273"
+    },
+    {
+      "file": "public/media/ff-mix/poster.jpg",
+      "bytes": 183360,
+      "sha256": "123066811ce39c8ec2494cb3da6b3496bd609d649279db204cc8691528a5fe06"
+    },
+    {
+      "file": "public/media/ff-mix/poster.webp",
+      "bytes": 39994,
+      "sha256": "f9b258b5019b7805128c6cdec17f51593928ef41daabc99407357195129c1148"
+    },
+    {
+      "file": "public/media/ff-office/poster.jpg",
+      "bytes": 175792,
+      "sha256": "ef4f33e0865f1e5a394d1a9295c44c4947dd7fcff7a1eed2aa8d65bd85d909ba"
+    },
+    {
+      "file": "public/media/ff-office/poster.webp",
+      "bytes": 78722,
+      "sha256": "6e76a5c8604359f55c76001fa6e49c203baccd37dec392b1e315eab5e3119382"
+    },
+    {
+      "file": "public/media/ikea-story/still-3.jpg",
+      "bytes": 74865,
+      "sha256": "ed0bca295743853eed4a8d94c25b7c2b735336bbd46c8d52640ef80d316896db"
+    },
+    {
+      "file": "public/media/ikea-story/still-3.webp",
+      "bytes": 34362,
+      "sha256": "95530bb586a129cfdf773bd51fb24660b21c8bf5257a9fe3f91cd7930b0588a8"
+    },
+    {
+      "file": "public/media/keyart-ff/poster.jpg",
+      "bytes": 264459,
+      "sha256": "b95df40ad126ce30fd5514f576f040cb21ad680035ca16d9d8f89fd28cf2e666"
+    },
+    {
+      "file": "public/media/keyart-ff/poster.webp",
+      "bytes": 135160,
+      "sha256": "ac3dbce4b6e8161a362da9ece8cde56228d0f2fb28d0072b6be2bf561783940f"
+    },
+    {
+      "file": "public/media/keyart-maid/poster.jpg",
+      "bytes": 96907,
+      "sha256": "3c9680bd221bc87313f4b8a5832d346a5f746b480762531d4b15b61b68d7b26e"
+    },
+    {
+      "file": "public/media/keyart-maid/poster.webp",
+      "bytes": 35856,
+      "sha256": "a8248610122b3e8b908acb5336c3c294003a937eefb3114d75a01eb1afc794ba"
+    },
+    {
+      "file": "public/media/keyart-patient/poster.jpg",
+      "bytes": 190628,
+      "sha256": "604fe552009f8af8bd6d732838f963b1cacc2f328585715398459488f012c088"
+    },
+    {
+      "file": "public/media/keyart-patient/poster.webp",
+      "bytes": 83794,
+      "sha256": "e86b4e8b64c1fa446c5e73e8c91b4ed6b26ac91ce01cb769fb55c49b48efdc1c"
+    },
+    {
+      "file": "public/media/keyart-sew/poster.jpg",
+      "bytes": 140828,
+      "sha256": "7fd8225ec9828df5719151f27f2c2fe87b421918bbdb992505549d104bd6a68f"
+    },
+    {
+      "file": "public/media/keyart-sew/poster.webp",
+      "bytes": 55334,
+      "sha256": "fe47b5b87b79c726752b2ed65fc3cf94183a817d703117b33a196852a7ae6b26"
+    },
+    {
+      "file": "public/media/lingopie-ugc/full.mp4",
+      "bytes": 2601858,
+      "sha256": "a2cd062538a31b17ef9460dc4a8a7da270114a75044d2b92348c7f32835cc091"
+    },
+    {
+      "file": "public/media/lingopie-ugc/loop.mp4",
+      "bytes": 817446,
+      "sha256": "ee22dd5af12dcbe282e7f83d5f5974136bf92346c03d694cfe4e518615d0e7a2"
+    },
+    {
+      "file": "public/media/lingopie-ugc/poster.jpg",
+      "bytes": 209852,
+      "sha256": "354e790794c7570f2eb38779dbfe0be481906c717e5d15dc8f733679062cd8d1"
+    },
+    {
+      "file": "public/media/lingopie-ugc/poster.webp",
+      "bytes": 93892,
+      "sha256": "d98f9511e8465e3a133bd8856ed073adce16d0972cb7585de63a383e2456f400"
+    },
+    {
+      "file": "public/media/lingopie-ugc/still-0.jpg",
+      "bytes": 96844,
+      "sha256": "d1b1a2e2adee430a3baeee90c42750679059f8eaa2353322928075657156a4df"
+    },
+    {
+      "file": "public/media/lingopie-ugc/still-0.webp",
+      "bytes": 53088,
+      "sha256": "51413dc55e0f82249c443bd32c047461a9fba1b2ecdd7a21303da158ed47cc20"
+    },
+    {
+      "file": "public/media/maid-ep01/full.mp4",
+      "bytes": 8816122,
+      "sha256": "ab5342dbf867624ba6cf9bbbe26bed026b0db825001a2a9f28ad1d755e9e6556"
+    },
+    {
+      "file": "public/media/maid-ep01/loop.mp4",
+      "bytes": 307070,
+      "sha256": "f2b6ac07257fd63edd2a07d60d23eb9ce71704e2831220e29f95d80a2a64db99"
+    },
+    {
+      "file": "public/media/maid-ep01/poster.jpg",
+      "bytes": 73951,
+      "sha256": "dc41ad0109f4900a62a6b82cb149633e1b657d3a7551d4dcd1673b0d3b4aded4"
+    },
+    {
+      "file": "public/media/maid-ep01/poster.webp",
+      "bytes": 23840,
+      "sha256": "f902f99392c99fa3cae737f5bb4de2bf60a7d3e96d24ff85f1c0e107f7937843"
+    },
+    {
+      "file": "public/media/maid-ep01/still-0.jpg",
+      "bytes": 68596,
+      "sha256": "9b92406dde288fda0064b738ee6ca2e38f792ddd920890c4dba5e0d3efa5d13d"
+    },
+    {
+      "file": "public/media/maid-ep01/still-0.webp",
+      "bytes": 27706,
+      "sha256": "a80d19556a6fe32f1c827da6278a697c01496159bc81b52513c8ff4156bc1768"
+    },
+    {
+      "file": "public/media/maid-ep01/still-1.jpg",
+      "bytes": 32828,
+      "sha256": "d1681586ce055f247dd1907ccdb8bfc11da6b4e242e886258787616ff57d2ba6"
+    },
+    {
+      "file": "public/media/maid-ep01/still-1.webp",
+      "bytes": 13004,
+      "sha256": "7cda977e1f25fc4a761ebbaae043892319799bfdd0d06e5c58a08f2743c34ebd"
+    },
+    {
+      "file": "public/media/maid-ep01/still-2.jpg",
+      "bytes": 30176,
+      "sha256": "081ffa1c5afe4804bc3b2c61e85a3c319251b7f4070db167cd31fcd9b4629eca"
+    },
+    {
+      "file": "public/media/maid-ep01/still-2.webp",
+      "bytes": 9818,
+      "sha256": "e1ccabb32e3d856e6d135547db176353840ce382a97e0e256805f64fd34947ee"
+    },
+    {
+      "file": "public/media/maid-ep01/still-3.jpg",
+      "bytes": 38096,
+      "sha256": "696e08e1984429764b4e2d7654b610a05f30b7605731c0e8541b753d39f32e28"
+    },
+    {
+      "file": "public/media/maid-ep01/still-3.webp",
+      "bytes": 15926,
+      "sha256": "5bae37bb46a861f409d65fe0d27314deae8e1f04791461f59316f82de7877aea"
+    },
+    {
+      "file": "public/media/maid-ep02/full.mp4",
+      "bytes": 11004413,
+      "sha256": "d5fdd929fe9a9e4cb57ca39a404ac0f987cb2a42161a58da4bc57b1c5e09afe8"
+    },
+    {
+      "file": "public/media/maid-ep02/loop.mp4",
+      "bytes": 325517,
+      "sha256": "b374e25c4b8a4339e191636ca6392b166227ae6c27f851e3c28b2da921f74975"
+    },
+    {
+      "file": "public/media/maid-ep02/poster.jpg",
+      "bytes": 82717,
+      "sha256": "f1053938f71ac9a2b315b5bbcca6fc39308f9b19a872981f4241eae0d3d50992"
+    },
+    {
+      "file": "public/media/maid-ep02/poster.webp",
+      "bytes": 23898,
+      "sha256": "dd984c2e9eb7c1cc599d5a021f821a0b7fb78a8af938a511ab0196ba527254e2"
+    },
+    {
+      "file": "public/media/msf-ep01/still-0.jpg",
+      "bytes": 57291,
+      "sha256": "cc9297e32aba01ca35fb531538546e90f9611d4a8da246b42194df1f2aded4cb"
+    },
+    {
+      "file": "public/media/msf-ep01/still-0.webp",
+      "bytes": 22938,
+      "sha256": "1b744baa38bd29bcbb49c5a101626d93f80b379bbb565cba5c63f0c6e6329412"
+    },
+    {
+      "file": "public/media/neon-night-a/poster.jpg",
+      "bytes": 426820,
+      "sha256": "b105a946fde8b7882cbb7a8bea30c6edf1b6dcd7bbf541f8e43536570ccc9969"
+    },
+    {
+      "file": "public/media/neon-night-a/poster.webp",
+      "bytes": 185704,
+      "sha256": "988daf75ffcb1fd418ff74cc22d23240b2a90734396f76d3f4972e0728cc6d64"
+    },
+    {
+      "file": "public/media/neon-night-b/poster.jpg",
+      "bytes": 323638,
+      "sha256": "cd93547a46c5389f16a7cef508dff43b04ab944002fa733f0e562b34d9a715e1"
+    },
+    {
+      "file": "public/media/neon-night-b/poster.webp",
+      "bytes": 135478,
+      "sha256": "0c391b3f997f6ffef835a1abf94d4ab54ba27091f37705b7cad7500a637c8fcc"
+    },
+    {
+      "file": "public/media/news-audio/full.mp3",
+      "bytes": 4141136,
+      "sha256": "c653075ad14fc1e2bb39d77cfb1aec0deae169d2594f4c6b4292585e20338bd9"
+    },
+    {
+      "file": "public/media/news-audio/poster.jpg",
+      "bytes": 240649,
+      "sha256": "c758b8a30e7aeedafc081e4bea552311b267c4231960a872db5955a5a3a31233"
+    },
+    {
+      "file": "public/media/news-audio/poster.webp",
+      "bytes": 46418,
+      "sha256": "b8c080717ce030ab6ed668b4880d5d124df195253d3fca0eb80d1d8a38f9a268"
+    },
+    {
+      "file": "public/media/news-output/full.mp4",
+      "bytes": 12651268,
+      "sha256": "a729bde0ad69efb148696ac51ce8ce2025df8e2c6633e7b14b296c0b9e476375"
+    },
+    {
+      "file": "public/media/news-output/loop.mp4",
+      "bytes": 460161,
+      "sha256": "2620a7a9ac7db08ae08b3d25d292c8ee71f9bceac4031d5d94bf7f69ebf23513"
+    },
+    {
+      "file": "public/media/news-output/poster.jpg",
+      "bytes": 184450,
+      "sha256": "b5ec806bfba3095dd3cd1914b724ea9d78a21ae7aa2ef9875c3f91f3a5632e48"
+    },
+    {
+      "file": "public/media/news-output/poster.webp",
+      "bytes": 72856,
+      "sha256": "27740f23eea35a2c04dfc958f7f4bb9d72aabb8b1284c992696d0adefea1b888"
+    },
+    {
+      "file": "public/media/news-output/still-2.jpg",
+      "bytes": 97293,
+      "sha256": "418571102308b321d1334b67b997ccb8824f35290431d785a8bdd96f2050f4e2"
+    },
+    {
+      "file": "public/media/news-output/still-2.webp",
+      "bytes": 50406,
+      "sha256": "4e35f17e80446f09f03ef18401bab987d23ba85abf7f36d36944da0ee1df0bc2"
+    },
+    {
+      "file": "public/media/news-show/full.mp4",
+      "bytes": 11998035,
+      "sha256": "3e03b377a05e0577fcb5c3ff1e7b612d8273560609214588ec25345007d236ad"
+    },
+    {
+      "file": "public/media/news-show/loop.mp4",
+      "bytes": 455564,
+      "sha256": "a96326ebc385fab125e678f45fe8dd795466fc08454cdaad41f91b6c28a40bce"
+    },
+    {
+      "file": "public/media/news-show/poster.jpg",
+      "bytes": 276121,
+      "sha256": "43941c03fdb35616476a0b4e043c363190269d9e0cb07ac95d3707abad72729a"
+    },
+    {
+      "file": "public/media/news-show/poster.webp",
+      "bytes": 96556,
+      "sha256": "5e213391d288848263c2c5704034e1b168b6a463f3f681cf67964b17e63e0de1"
+    },
+    {
+      "file": "public/media/news-show/still-0.jpg",
+      "bytes": 76807,
+      "sha256": "a900946920a7b95a5b99579872025eb9a1d9bc82ed9e44cccbac8d38adfc17f9"
+    },
+    {
+      "file": "public/media/news-show/still-0.webp",
+      "bytes": 38674,
+      "sha256": "ecb8e9081bfe2695247830887c85ebc2f90e1378a788f7e14eb495dd9118d19a"
+    },
+    {
+      "file": "public/media/news-show/still-2.jpg",
+      "bytes": 94248,
+      "sha256": "483b41f3b81077f49edae82c6726e79272d483f8eda0be2909d9ef2332cabf1c"
+    },
+    {
+      "file": "public/media/news-show/still-2.webp",
+      "bytes": 41006,
+      "sha256": "07dd2955be7d0136607f264b526dcc76b2137275b4007e4afa8eca5dd9e0171b"
+    },
+    {
+      "file": "public/media/patient-ep01/full.mp4",
+      "bytes": 14861941,
+      "sha256": "ed70248f2a45a6a5e5168511176f265dbdcd7e40c2dbeb916a3c87bcfb64c472"
+    },
+    {
+      "file": "public/media/patient-ep01/loop.mp4",
+      "bytes": 525530,
+      "sha256": "37cb828bc388593c3cb454175fc6bb114384db436492d03370b8631b49cb1339"
+    },
+    {
+      "file": "public/media/patient-ep01/poster.jpg",
+      "bytes": 70602,
+      "sha256": "2bdf7c4fc6a27eb82a989c96cbab589bcae7a5851e3a7baa087dd9d3f163ff74"
+    },
+    {
+      "file": "public/media/patient-ep01/poster.webp",
+      "bytes": 22318,
+      "sha256": "977f406db345d6e9b077c88df07a440368048d984e7839fb07ea8b0e037e6759"
+    },
+    {
+      "file": "public/media/patient-ep01/still-0.jpg",
+      "bytes": 31967,
+      "sha256": "2564dacbdd0719c0bd04bd2b8f0a5e4781e1558876e5e21115d7a191a0126962"
+    },
+    {
+      "file": "public/media/patient-ep01/still-0.webp",
+      "bytes": 12938,
+      "sha256": "d361c8309294f3f64b9b271aec0d01436a38ef7ece6a651181eb1fd4da048aaf"
+    },
+    {
+      "file": "public/media/patient-ep01/still-1.jpg",
+      "bytes": 38500,
+      "sha256": "9e6aa24195fc38b98e4905601ee93d9839bb414bf21bf93232fdf60a3c01564d"
+    },
+    {
+      "file": "public/media/patient-ep01/still-1.webp",
+      "bytes": 15842,
+      "sha256": "232cdd69d8cc2555c3c12240948f5735556e599c4bf0c0a8f76a221da1993018"
+    },
+    {
+      "file": "public/media/patient-ep01/still-2.jpg",
+      "bytes": 27270,
+      "sha256": "671be01a27143a089ef65106aff471593a86c880e7f04decf66b722e7eca39f1"
+    },
+    {
+      "file": "public/media/patient-ep01/still-2.webp",
+      "bytes": 11416,
+      "sha256": "86626b2d761e76972840ab88e496b25fa5c56f34f0be78e9c85fa2587719742c"
+    },
+    {
+      "file": "public/media/patient-ep01/still-3.jpg",
+      "bytes": 42124,
+      "sha256": "cc32d33d84c52c26405747d07cfc3510ff35153f73455aff31db44bf997743ac"
+    },
+    {
+      "file": "public/media/patient-ep01/still-3.webp",
+      "bytes": 17234,
+      "sha256": "92ce395636b160e399c4c02948a5698f6deb5795056848c717383e261ccce136"
+    },
+    {
+      "file": "public/media/podcast-a/full.mp4",
+      "bytes": 3188161,
+      "sha256": "36c8c7892ad41a2d31b085e590b8dbb3cec18a116808158d54557e3bd63e7431"
+    },
+    {
+      "file": "public/media/podcast-a/loop.mp4",
+      "bytes": 424986,
+      "sha256": "3f4941148a4716fa701978f710ef5dcc68521d7d651ac2a206d8fc18dfc919c9"
+    },
+    {
+      "file": "public/media/podcast-a/poster.jpg",
+      "bytes": 217193,
+      "sha256": "ab9ca858c1a2bc76d08c958fe4ac656e51686ff203469b3fd50e79258e0cda22"
+    },
+    {
+      "file": "public/media/podcast-a/poster.webp",
+      "bytes": 79196,
+      "sha256": "5b7553989e1f30cf91b4c0fbbee6e3d3c41cf19d60c6e6a360b60fb4412391bf"
+    },
+    {
+      "file": "public/media/podcast-b/full.mp4",
+      "bytes": 5955159,
+      "sha256": "34e8611168932f8229eb0640cf88679aafec7289ff40acddafc00addc05e027a"
+    },
+    {
+      "file": "public/media/podcast-b/loop.mp4",
+      "bytes": 422391,
+      "sha256": "d8f183744430f1b03e024ef6b1519d010060aba0cb50d360a881662051788472"
+    },
+    {
+      "file": "public/media/podcast-b/poster.jpg",
+      "bytes": 193210,
+      "sha256": "5967cc9e4526a8a1e34d5c8e356eb8c8661d00b8e2aef62ac4f1e22187aa8b02"
+    },
+    {
+      "file": "public/media/podcast-b/poster.webp",
+      "bytes": 73696,
+      "sha256": "fa16d574df11853d7de1a5529ae5ac29a48ba8b002febf20c9e81d008aaadea2"
+    },
+    {
+      "file": "public/media/podcast-c/full.mp4",
+      "bytes": 5358390,
+      "sha256": "c049ad13b882741f34ea569cf6bc99725d8b41ffb51a258e954f13255dcf4ab9"
+    },
+    {
+      "file": "public/media/podcast-c/loop.mp4",
+      "bytes": 387639,
+      "sha256": "7bc35ffa6f22d8a0f655a9bfaa3f1cc4f5b699b0eb48ee978289048a42205722"
+    },
+    {
+      "file": "public/media/podcast-c/poster.jpg",
+      "bytes": 240432,
+      "sha256": "2bb4b9300d6099239d7e953e9dadb5bd90b86b1ca49de7037e807aa1249c97c1"
+    },
+    {
+      "file": "public/media/podcast-c/poster.webp",
+      "bytes": 88286,
+      "sha256": "5263b8be743e8d64684bc0f9464a7f8d6b356746903c98a9ad1b211e644fe572"
+    },
+    {
+      "file": "public/media/portrait-studio/poster.jpg",
+      "bytes": 368081,
+      "sha256": "c1dbbaeaf5d634d2d3d4f52334f6156039091cd6e1e426a1c6f1c1cf69ffd493"
+    },
+    {
+      "file": "public/media/portrait-studio/poster.webp",
+      "bytes": 167522,
+      "sha256": "08fdd2eca94203c030addfe0c5c9cebd124f20590e092866c915cd3f44260957"
+    },
+    {
+      "file": "public/media/sew-ep01/full.mp4",
+      "bytes": 23906518,
+      "sha256": "5bf8a5785864a87c0cadf7560ccbb71543256f3f64cf06d74b17f243ac5a9b3a"
+    },
+    {
+      "file": "public/media/sew-ep01/loop.mp4",
+      "bytes": 1036951,
+      "sha256": "22fc2434bf9463d0c89e6f4c84edf44d15ac7e5b7ef7fe462949ec156740d268"
+    },
+    {
+      "file": "public/media/sew-ep01/poster.jpg",
+      "bytes": 125770,
+      "sha256": "51882d5afe80b28723aa26426e6bbe2fb0d1a28209b5a3da5c4bea93ffd2d3cf"
+    },
+    {
+      "file": "public/media/sew-ep01/poster.webp",
+      "bytes": 44250,
+      "sha256": "25839cae2652c7f788d5d8ba4c504263274547feed44c8511250cd357892da24"
+    },
+    {
+      "file": "public/media/sew-ep01/still-0.jpg",
+      "bytes": 63686,
+      "sha256": "efa27919b029e434e75ba43e967bced3734cbd39d8b562f8041aec20acf22912"
+    },
+    {
+      "file": "public/media/sew-ep01/still-0.webp",
+      "bytes": 29650,
+      "sha256": "beb160917e2c0db68312086a88bbbb270014b386919498380416ffe57b9781bd"
+    },
+    {
+      "file": "public/media/sew-ep01/still-1.jpg",
+      "bytes": 53911,
+      "sha256": "290aed21693e13c67315cf1e8de892440fc6fe39269aac761e9932c8dd91b1a9"
+    },
+    {
+      "file": "public/media/sew-ep01/still-1.webp",
+      "bytes": 19462,
+      "sha256": "e5b4c16b56d3cc2be6af5c707cb27bfb2ac6b10d7faa1349ba958ad7c525da0d"
+    },
+    {
+      "file": "public/media/sew-ep01/still-2.jpg",
+      "bytes": 48952,
+      "sha256": "8e2bd98f8593ce0ba6dc7fac4984b81dd2a5114794c8c098f0ed36e848f08e01"
+    },
+    {
+      "file": "public/media/sew-ep01/still-2.webp",
+      "bytes": 21866,
+      "sha256": "9b2286f12640404ec5a7fa07aa780f67665f28eac5e1b546613f2c90bbc5a872"
+    },
+    {
+      "file": "public/media/sew-ep01/still-3.jpg",
+      "bytes": 49032,
+      "sha256": "2e93a1f353c0575bbdc657057d42ebeb61734297f59ee28fcc5c7f4800b8c6c7"
+    },
+    {
+      "file": "public/media/sew-ep01/still-3.webp",
+      "bytes": 20212,
+      "sha256": "9130e081c7bca0937c2cf78477609856dd6db60b64dff8c9c0b18ef0f5ff213a"
+    },
+    {
+      "file": "public/media/tutorial/full.mp4",
+      "bytes": 8983434,
+      "sha256": "2a0bc29d4e4d226d19d4d1c2d2413294dd5927fe9c1ecf86218273b21c4c288c"
+    },
+    {
+      "file": "public/media/tutorial/loop.mp4",
+      "bytes": 705778,
+      "sha256": "42fe0b1e136349e1875d7b558f5e5de24aaff4573ed3c4e80940f190f96867bd"
+    },
+    {
+      "file": "public/media/tutorial/poster.jpg",
+      "bytes": 156333,
+      "sha256": "996950791308efe0411d901d87cea4dd0d6990e17f0b076aec7001337565da35"
+    },
+    {
+      "file": "public/media/tutorial/poster.webp",
+      "bytes": 59310,
+      "sha256": "c630183efabb858f69b55ee0a8a88b712a5edbb47640b93c5c30855d0c5e1f6b"
+    },
+    {
+      "file": "public/media/vamp-ep01/still-2.jpg",
+      "bytes": 80962,
+      "sha256": "bd21e9434c739d260eb3af71e08d6288ee2a393f722314d9f36b4d91377d00da"
+    },
+    {
+      "file": "public/media/vamp-ep01/still-2.webp",
+      "bytes": 38092,
+      "sha256": "c269528698cdf7cbaa84dd7b73794589771b3a09ff9c34cfafd895d4b8d4f2f5"
+    }
+  ],
+  "totalBytes": 188265977,
+  "videoFiles": 26,
+  "audioFiles": 2,
+  "over10MB": [
+    {
+      "file": "public/media/ff-ep01/full.mp4",
+      "bytes": 27287276
+    },
+    {
+      "file": "public/media/ff-ep02/full.mp4",
+      "bytes": 30056447
+    },
+    {
+      "file": "public/media/maid-ep02/full.mp4",
+      "bytes": 11004413
+    },
+    {
+      "file": "public/media/news-output/full.mp4",
+      "bytes": 12651268
+    },
+    {
+      "file": "public/media/news-show/full.mp4",
+      "bytes": 11998035
+    },
+    {
+      "file": "public/media/patient-ep01/full.mp4",
+      "bytes": 14861941
+    },
+    {
+      "file": "public/media/sew-ep01/full.mp4",
+      "bytes": 23906518
+    }
+  ]
+}

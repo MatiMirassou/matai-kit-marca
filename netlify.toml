@@ -7,4 +7,5 @@
 
 # Known EN/ES showcase, project and presentation routes are pre-rendered into
 # dist/<route>/index.html. No blanket SPA rewrite is needed for those pages.
-# Client media stays outside Git and needs an approved external media host.
+# Selected web media is included as-is in public/media and served by Netlify.
+# Original production files and unused media remain excluded from Git.
