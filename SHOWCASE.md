@@ -1,6 +1,6 @@
 # Showcase implementation — 23 October 2026
 
-Local implementation on `codex/showcase-bilingual`. Nothing has been deployed or pushed.
+Implementation developed and verified on `codex/showcase-bilingual`. Netlify build configuration is checked in for Git-backed deployment from `main`.
 
 ## One project, two layouts
 
@@ -35,4 +35,4 @@ Verified locally: 39 showcase browser checks, 25 deck interaction checks, 10 uni
 
 ## Deferred to deployment discussion
 
-No hosting, DNS, Vercel project, public media upload or GitHub push has been performed. Authorized client media remains outside Git. A fresh clone can build the page structure but needs an agreed media delivery solution before a complete public launch. The source repository being public does not grant reuse rights to client work or the Mat.AI identity.
+Hosting-account setup, DNS and public media uploads remain separate from the source-code push. Authorized client media remains outside Git. A fresh clone can build the page structure but needs an agreed media delivery solution before a complete public launch. The source repository being public does not grant reuse rights to client work or the Mat.AI identity.

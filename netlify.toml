@@ -1,0 +1,10 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "24"
+
+# Known EN/ES showcase, project and presentation routes are pre-rendered into
+# dist/<route>/index.html. No blanket SPA rewrite is needed for those pages.
+# Client media stays outside Git and needs an approved external media host.

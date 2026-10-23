@@ -33,6 +33,10 @@ npm run dev
 
 Open http://localhost:5180/en/ (showcase) or http://localhost:5180/en/presentation/ (deck). **Requirements:** Node 20.19+ (tested on 24), plus Microsoft Edge or Google Chrome (used for PDF export and QA; nothing is downloaded).
 
+### Netlify
+
+Connect this repository and select `main` as the production branch. The checked-in `netlify.toml` sets Node 24, build command `npm run build`, and publish directory `dist`; leave the base directory empty. Both public layouts deploy together. Known routes are pre-rendered as static directory pages. Videos, posters, stills and audio remain excluded from Git and must be connected to an approved media host before the site is ready to share.
+
 | Command | What it does |
 |---|---|
 | `npm run dev` | Live-reloading dev server |
