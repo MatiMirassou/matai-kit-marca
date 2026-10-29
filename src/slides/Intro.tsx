@@ -1,4 +1,5 @@
 import {content,t} from '../content';
+import {copy} from '../content/language.ts';
 import {Brackets,Kicker} from '../components/Cinema.tsx';
 import {Logo} from '../components/Logo.tsx';
 import {Headline,Reveal} from '../components/Reveal.tsx';
@@ -21,7 +22,7 @@ export function Cover({coverPanels=panels,...props}:SlideProps & {coverPanels?:A
   <div className="cover-wash"/>
   <Brackets inset={22} size={22} className="stack:hidden"/>
   <div className="cover-top"><Logo variant="full" tone="dark" className="cover-logo"/><p className="cover-prepared">{params.forCompany ? `${content.ui.preparedFor} ${params.forCompany}` : brand.eyebrow}</p></div>
-  <div className="cover-copy"><Headline as="h1" text={brand.taglineMarked} className="display-tight cover-title"/><p>{brand.coverSub.split(/ — (?:by|por) /)[0]}.<span className="cover-byline">{t('By')} {brand.founder}</span></p></div>
+  <div className="cover-copy"><Headline as="h1" text={copy('Human Creativity\n_Powered by AI_','Creatividad Humana\n_Potenciada con IA_')} className="display-tight cover-title"/><p>{brand.coverSub.split(/ — (?:by|por) /)[0]}.<span className="cover-byline">{t('By')} {brand.founder}</span></p></div>
   <p className="cover-location">{brand.location}<span>{brand.languages}</span></p>
  </SlideFrame>;
 }

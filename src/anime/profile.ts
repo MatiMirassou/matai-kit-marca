@@ -12,7 +12,7 @@ export const animeServices:Service[]=content.services.map(s=>s.id==='ads'?{
  id:'anime',craft:'story',n:'02',name:c('AI Anime','Anime con IA'),
  line:c('Emotional stories shaped through visual exploration and AI-generated characters.','Historias emotivas con dirección visual y personajes generados con IA.'),
  points:[c('Visual direction & style','Dirección visual y estilo'),c('Character design & continuity','Diseño de personajes y continuidad'),c('Generated scenes & episodes','Escenas y episodios generados')],media:'anime-mars-mission@2',
-}:s);
+}:s.id==='automation'?{...s,media:'news-output@2'}:s);
 export const animeFounder:Founder={...content.founder,
  role:professionalTitle,
  bio:c('I’m Matías Mirassou, an audiovisual creative from Buenos Aires. My background spans television post-production, audiovisual arts and animation. Today I direct and generate AI films and series, and develop content automation systems.','Soy Matías Mirassou, creativo audiovisual de Buenos Aires. Mi recorrido combina postproducción televisiva, artes audiovisuales y animación. Hoy dirijo y genero películas y series con IA, y desarrollo sistemas de automatización de contenido.'),

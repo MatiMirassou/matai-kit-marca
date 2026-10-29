@@ -215,7 +215,7 @@
   .hybrid-cover .cover-service { top: 14px; left: 12px; right: 8px; font-size: 13px; }
   .hybrid-cover .cover-shade { background: linear-gradient(rgb(20 18 16 / .45), transparent 48%, rgb(20 18 16 / .2)); }
   .hybrid-cover .cover-copy { bottom: auto; }
-  .hybrid-cover .cover-title { font-size: 45px; line-height: .94; }
+  .hybrid-cover .cover-title { font-size: clamp(26px, 9vw, 45px); line-height: .94; }
   .hybrid-cover .cover-copy > p { max-width: none; margin-top: 22px; font-size: 18px; }
   .cover-byline { margin-top: 12px; font-size: 15px; }
   .cover-location { position: static; order: 3; margin-top: 25px; font-size: 11px; text-align: left; }

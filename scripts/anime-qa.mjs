@@ -14,6 +14,8 @@ for(const lang of ['en','es']){
  await page.goto(`${server.url}/${lang}/presentation/anime/?motion=off`);await page.waitForSelector('[data-slide="contact"]');await page.evaluate(()=>document.fonts.ready);
  assert.equal(await page.locator('[data-slide]').count(),19);checks++;
  assert.equal(await page.locator('meta[name="robots"]').getAttribute('content'),'noindex, nofollow, noarchive');checks++;
+ assert.equal((await page.locator('[data-slide="cover"] h1').innerText()).replace(/\s+/g,' ').trim().toUpperCase(),lang==='en'?'HUMAN CREATIVITY POWERED BY AI':'CREATIVIDAD HUMANA POTENCIADA CON IA');checks++;
+ assert.match(await page.locator('[data-slide="offer"] .solution').nth(2).locator('img').getAttribute('src'),/news-output\/still-2/);checks++;
  // The middle cover strip uses The Vamp ep01, including the reduced-motion poster.
  const coverAnime=page.locator('[data-slide="cover"] .cover-panel').nth(1);
  assert.match(await coverAnime.locator('img').getAttribute('src'),/anime-vamp-01\/still-0/);checks++;
@@ -57,6 +59,7 @@ for(const lang of ['en','es']){
 const page=await browser.newPage();
 for(const lang of ['en','es']){
  await page.goto(`${server.url}/${lang}/presentation/?motion=off`);await page.waitForSelector('[data-slide="contact"]');assert.equal(await page.locator('[data-slide]').count(),12);assert.equal(await page.locator('.anime-slide').count(),0);checks++;
+ assert.equal((await page.locator('[data-slide="cover"] h1').innerText()).replace(/\s+/g,' ').trim().toUpperCase(),lang==='en'?'HUMAN CREATIVITY POWERED BY AI':'CREATIVIDAD HUMANA POTENCIADA CON IA');checks++;
  await page.goto(`${server.url}/${lang}/`);await page.waitForSelector('.showcase');assert.equal(await page.locator('a[href*="presentation/anime"]').count(),0);checks++;
 }
 await page.close();
