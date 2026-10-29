@@ -1,4 +1,5 @@
 import manifest from '../generated/media.json';
+import animeManifest from '../generated/anime-media.json';
 
 export interface StillEntry {
   poster: string;
@@ -22,7 +23,7 @@ export interface MediaEntry {
   stills?: StillEntry[];
 }
 
-const entries = manifest as Record<string, MediaEntry>;
+const entries = {...manifest,...animeManifest} as Record<string, MediaEntry>;
 const base = import.meta.env.BASE_URL;
 
 /**

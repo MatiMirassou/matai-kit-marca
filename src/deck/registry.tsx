@@ -9,9 +9,18 @@ import { Systems } from '../slides/Systems.tsx';
 import { CaseStudy } from '../slides/CaseStudy.tsx';
 import { Contact, Credits, Fit } from '../slides/Exit.tsx';
 import { BrandColor, BrandCover, BrandElements, BrandLogo, BrandMisuse, BrandType } from '../slides/Brand.tsx';
+import {AnimeCover,AnimeOverview,AnimeProcess,AnimeResults,AnimeContact,AnimeOffer,AnimeFounder,AnimeCharacters} from '../anime/AnimeSlides.tsx';
 
 /** Slide kind → component. A missing kind is a compile error. */
 export const registry = {
+  'anime-cover':AnimeCover,
+  'anime-offer':AnimeOffer,
+  'anime-founder':AnimeFounder,
+  'anime-characters':AnimeCharacters,
+  'anime-overview':AnimeOverview,
+  'anime-process':AnimeProcess,
+  'anime-results':AnimeResults,
+  'anime-contact':AnimeContact,
   cover: Cover,
   founder: Founder,
   offer: Offer,

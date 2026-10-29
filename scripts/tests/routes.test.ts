@@ -23,3 +23,10 @@ test('translation keeps structure, technical IDs and proper names stable',()=>{
  const value={id:'news-video',kind:'client',title:'Forgotten Fortune',label:'Editorial review',links:['Lingopie','media/news/full.mp4']};
  assert.deepEqual(translateTree(value),{...value,label:'Revisión editorial'});
 });
+test('unlisted anime edition uses its own bilingual route',()=>{
+ assert.deepEqual(resolveRoute('/en/presentation/anime/'),{view:'presentation',language:'en',edition:'anime'});
+ assert.deepEqual(resolveRoute('/es/presentation/anime/'),{view:'presentation',language:'es',edition:'anime'});
+ assert.equal(languageHref({view:'presentation',language:'en',edition:'anime'},'es','?motion=off','#anime/mars-results'),'/es/presentation/anime/?motion=off#anime/mars-results');
+ assert.equal(resolveRoute('/en/presentation/').edition,undefined);
+ assert.equal(resolveRoute('/en/presentation/other/').view,'not-found');
+});

@@ -207,6 +207,14 @@ export interface Source {
 
 /* ── Deck ────────────────────────────────────────────────────────────────── */
 export type SlideKind =
+  | 'anime-cover'
+  | 'anime-offer'
+  | 'anime-founder'
+  | 'anime-characters'
+  | 'anime-overview'
+  | 'anime-process'
+  | 'anime-results'
+  | 'anime-contact'
   | 'cover'
   | 'founder'
   | 'offer'

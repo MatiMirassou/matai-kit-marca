@@ -75,7 +75,7 @@ function IndexDialog() {
 
 /** Fixed on-screen controls (never printed): progress rail, mode/motion/PDF controls, notes, index. */
 export function DeckChrome() {
-  const { slides, mode, setMode, motion, setMotion, notesOpen, setNotesOpen, setIndexOpen, isPrint } = useDeck();
+  const { slides, mode, setMode, motion, setMotion, notesOpen, setNotesOpen, setIndexOpen, isPrint,params } = useDeck();
   const { index, go } = usePosition();
   const [idle, setIdle] = useState(false);
   const [canFullscreen] = useState(() => document.fullscreenEnabled);
@@ -106,7 +106,7 @@ export function DeckChrome() {
   const hidden = mode === 'present' && idle && !notesOpen;
 
   return (
-    <div className="no-print">
+    <div className={`no-print ${params.deck==='anime'?'anime-controls':''}`}>
       {/* Progress rail */}
       <nav
         aria-label={t("Slides")}

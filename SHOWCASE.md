@@ -1,5 +1,22 @@
 # Showcase implementation — 23 October 2026
 
+## Unlisted anime edition — 29 October 2026
+
+The owner approved publishing the reviewed bilingual anime edition to the existing GitHub/Netlify project on 29 October 2026.
+
+- Routes on the same site: `/en/presentation/anime/` and `/es/presentation/anime/`.
+- 19 slides (revised 29 October): original three-strip cover with Vertical Drama / AI Anime / Automated Content, updated services, eight anime slides, original sections except Ads, updated founder and job-focused closing.
+- The AI Anime cover strip previews The Vamp episode 01 using its existing muted loop; clicking opens the original full episode. Reduced motion retains a frame from that episode. The loop at `public/media/vamp-ep01/loop.mp4` is included in the publication allowlist.
+- The original 12-slide presentation and public showcase remain separate. No public navigation advertises the anime route. Static entry HTML and runtime set `noindex, nofollow, noarchive`; this is unlisted, not access-controlled.
+- The Vamp: character sheets, wardrobe references and both generated episodes. Platform Zero: three character sheets and the trailer. Love on Mars: four visible Style Exploration boards, a separate Character Selection slide, and four playable generated scenes.
+- Edition-specific offer headline: “Human creativity powered by AI”. Anime headline: “Three stories. A spectrum of emotions.” / “Tres historias. Un universo de emociones.”
+- Founder experience starts in 2010. Education replaces selected film credits, including Coderhouse Front End Developer (2021–2025, confirmed by the owner). Founder and contact use “AI Creative Producer & Technical Director” with the corresponding Spanish title. Original deck/profile data is not overwritten.
+- Attribution: AI direction and visual generation by Matías Mirassou; scripts supplied by others. No unverified tool, budget, team-management or production-timeline claims.
+- New media lives in `public/media/anime-review/`; only used files are allowlisted. Seven videos are original, untranscoded copies. This edition adds 70 files (including the existing cover loop) to the previous 130-file selection: 200 files / 516,281,489 bytes total. Unused development assets remain ignored.
+- Preparation: `node scripts/anime-media.mjs "D:/03 MatAI/AI Anime Presentation"`. This generates the separate `src/generated/anime-media.json` catalog and a local inventory in `qa/anime/`.
+- Review: `npm run dev -- --host 127.0.0.1 --port 5180`. Test after building with `npm run test:anime`; use `node scripts/anime-qa.mjs --dev` against the review server.
+- `public-media.lock.json` fingerprints the complete publication selection. Validate from a clean index export before pushing. Unlisted routes and robots metadata are not privacy controls: published media is downloadable and the GitHub repository is public.
+
 Implementation developed and verified on `codex/showcase-bilingual`. Netlify build configuration is checked in for Git-backed deployment from `main`.
 
 ## One project, two layouts
@@ -35,4 +52,4 @@ Verified locally: 39 showcase browser checks, 25 deck interaction checks, 10 uni
 
 ## Netlify-only media launch
 
-The owner requested direct Netlify media delivery, using existing files without further video optimization. The exact 130-file selection (about 188 MB) is tracked under `public/media/`, restricted by the `.gitignore` allowlist, and fingerprinted in `public-media.lock.json`. The build verifies file availability and hashes. No original production files or unused full videos are included. No external media service is configured or required for this launch. Seven files exceed Netlify's published 10 MB CDN guidance and are intentionally being tried as-is; inspect the actual deployment for acceptance and playback. The source repository being public does not grant reuse rights to client work or the Mat.AI identity.
+The owner requested direct Netlify media delivery, using existing files without further video optimization. The exact 200-file selection (about 516 MB, including the anime edition) is tracked under `public/media/`, restricted by the `.gitignore` allowlist, and fingerprinted in `public-media.lock.json`. The build verifies file availability and hashes. No unused full videos or private source directories are included. No external media service is configured for this launch. Fourteen files exceed Netlify's published 10 MB CDN guidance and are intentionally being tried as-is; inspect the actual deployment for acceptance and playback. The source repository being public does not grant reuse rights to client work or the Mat.AI identity.

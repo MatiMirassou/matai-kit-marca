@@ -9,6 +9,7 @@
     "build": "tsc --noEmit && node scripts/public-media.mjs && vite build && vite build --ssr src/showcase/prerender.tsx --outDir .site-render && node scripts/prerender.mjs",
     "check:media": "node scripts/public-media.mjs",
     "test:showcase": "node scripts/showcase-qa.mjs",
+    "test:anime": "node scripts/anime-qa.mjs",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",
     "test": "node --test \"scripts/tests/*.test.ts\"",

@@ -1,0 +1,437 @@
+{
+  "anime-vamp-01": {
+    "kind": "video",
+    "width": 1080,
+    "height": 1920,
+    "aspect": "9:16",
+    "poster": "media/anime-review/anime-vamp-01/poster.jpg",
+    "posterWebp": "media/anime-review/anime-vamp-01/poster.webp",
+    "duration": 65.375,
+    "hasAudio": true,
+    "full": "media/anime-review/anime-vamp-01/full.mp4",
+    "stills": [
+      {
+        "poster": "media/anime-review/anime-vamp-01/still-0.jpg",
+        "posterWebp": "media/anime-review/anime-vamp-01/still-0.webp",
+        "width": 1080,
+        "height": 1920
+      },
+      {
+        "poster": "media/anime-review/anime-vamp-01/still-1.jpg",
+        "posterWebp": "media/anime-review/anime-vamp-01/still-1.webp",
+        "width": 1080,
+        "height": 1920
+      },
+      {
+        "poster": "media/anime-review/anime-vamp-01/still-2.jpg",
+        "posterWebp": "media/anime-review/anime-vamp-01/still-2.webp",
+        "width": 1080,
+        "height": 1920
+      },
+      {
+        "poster": "media/anime-review/anime-vamp-01/still-3.jpg",
+        "posterWebp": "media/anime-review/anime-vamp-01/still-3.webp",
+        "width": 1080,
+        "height": 1920
+      }
+    ]
+  },
+  "anime-vamp-02": {
+    "kind": "video",
+    "width": 1080,
+    "height": 1920,
+    "aspect": "9:16",
+    "poster": "media/anime-review/anime-vamp-02/poster.jpg",
+    "posterWebp": "media/anime-review/anime-vamp-02/poster.webp",
+    "duration": 68.541667,
+    "hasAudio": true,
+    "full": "media/anime-review/anime-vamp-02/full.mp4",
+    "stills": [
+      {
+        "poster": "media/anime-review/anime-vamp-02/still-0.jpg",
+        "posterWebp": "media/anime-review/anime-vamp-02/still-0.webp",
+        "width": 1080,
+        "height": 1920
+      },
+      {
+        "poster": "media/anime-review/anime-vamp-02/still-1.jpg",
+        "posterWebp": "media/anime-review/anime-vamp-02/still-1.webp",
+        "width": 1080,
+        "height": 1920
+      },
+      {
+        "poster": "media/anime-review/anime-vamp-02/still-2.jpg",
+        "posterWebp": "media/anime-review/anime-vamp-02/still-2.webp",
+        "width": 1080,
+        "height": 1920
+      },
+      {
+        "poster": "media/anime-review/anime-vamp-02/still-3.jpg",
+        "posterWebp": "media/anime-review/anime-vamp-02/still-3.webp",
+        "width": 1080,
+        "height": 1920
+      }
+    ]
+  },
+  "anime-platform": {
+    "kind": "video",
+    "width": 1280,
+    "height": 720,
+    "aspect": "16:9",
+    "poster": "media/anime-review/anime-platform/poster.jpg",
+    "posterWebp": "media/anime-review/anime-platform/poster.webp",
+    "duration": 39.541667,
+    "hasAudio": true,
+    "full": "media/anime-review/anime-platform/full.mp4",
+    "stills": [
+      {
+        "poster": "media/anime-review/anime-platform/still-0.jpg",
+        "posterWebp": "media/anime-review/anime-platform/still-0.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "poster": "media/anime-review/anime-platform/still-1.jpg",
+        "posterWebp": "media/anime-review/anime-platform/still-1.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "poster": "media/anime-review/anime-platform/still-2.jpg",
+        "posterWebp": "media/anime-review/anime-platform/still-2.webp",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "poster": "media/anime-review/anime-platform/still-3.jpg",
+        "posterWebp": "media/anime-review/anime-platform/still-3.webp",
+        "width": 1280,
+        "height": 720
+      }
+    ]
+  },
+  "anime-mars-mission": {
+    "kind": "video",
+    "width": 720,
+    "height": 1280,
+    "aspect": "9:16",
+    "poster": "media/anime-review/anime-mars-mission/poster.jpg",
+    "posterWebp": "media/anime-review/anime-mars-mission/poster.webp",
+    "duration": 27.3,
+    "hasAudio": true,
+    "full": "media/anime-review/anime-mars-mission/full.mp4",
+    "stills": [
+      {
+        "poster": "media/anime-review/anime-mars-mission/still-0.jpg",
+        "posterWebp": "media/anime-review/anime-mars-mission/still-0.webp",
+        "width": 720,
+        "height": 1280
+      },
+      {
+        "poster": "media/anime-review/anime-mars-mission/still-1.jpg",
+        "posterWebp": "media/anime-review/anime-mars-mission/still-1.webp",
+        "width": 720,
+        "height": 1280
+      },
+      {
+        "poster": "media/anime-review/anime-mars-mission/still-2.jpg",
+        "posterWebp": "media/anime-review/anime-mars-mission/still-2.webp",
+        "width": 720,
+        "height": 1280
+      },
+      {
+        "poster": "media/anime-review/anime-mars-mission/still-3.jpg",
+        "posterWebp": "media/anime-review/anime-mars-mission/still-3.webp",
+        "width": 720,
+        "height": 1280
+      }
+    ]
+  },
+  "anime-mars-ramen": {
+    "kind": "video",
+    "width": 720,
+    "height": 1280,
+    "aspect": "9:16",
+    "poster": "media/anime-review/anime-mars-ramen/poster.jpg",
+    "posterWebp": "media/anime-review/anime-mars-ramen/poster.webp",
+    "duration": 24.733333,
+    "hasAudio": true,
+    "full": "media/anime-review/anime-mars-ramen/full.mp4",
+    "stills": [
+      {
+        "poster": "media/anime-review/anime-mars-ramen/still-0.jpg",
+        "posterWebp": "media/anime-review/anime-mars-ramen/still-0.webp",
+        "width": 720,
+        "height": 1280
+      },
+      {
+        "poster": "media/anime-review/anime-mars-ramen/still-1.jpg",
+        "posterWebp": "media/anime-review/anime-mars-ramen/still-1.webp",
+        "width": 720,
+        "height": 1280
+      },
+      {
+        "poster": "media/anime-review/anime-mars-ramen/still-2.jpg",
+        "posterWebp": "media/anime-review/anime-mars-ramen/still-2.webp",
+        "width": 720,
+        "height": 1280
+      },
+      {
+        "poster": "media/anime-review/anime-mars-ramen/still-3.jpg",
+        "posterWebp": "media/anime-review/anime-mars-ramen/still-3.webp",
+        "width": 720,
+        "height": 1280
+      }
+    ]
+  },
+  "anime-mars-training": {
+    "kind": "video",
+    "width": 720,
+    "height": 1280,
+    "aspect": "9:16",
+    "poster": "media/anime-review/anime-mars-training/poster.jpg",
+    "posterWebp": "media/anime-review/anime-mars-training/poster.webp",
+    "duration": 23.233333,
+    "hasAudio": true,
+    "full": "media/anime-review/anime-mars-training/full.mp4",
+    "stills": [
+      {
+        "poster": "media/anime-review/anime-mars-training/still-0.jpg",
+        "posterWebp": "media/anime-review/anime-mars-training/still-0.webp",
+        "width": 720,
+        "height": 1280
+      },
+      {
+        "poster": "media/anime-review/anime-mars-training/still-1.jpg",
+        "posterWebp": "media/anime-review/anime-mars-training/still-1.webp",
+        "width": 720,
+        "height": 1280
+      },
+      {
+        "poster": "media/anime-review/anime-mars-training/still-2.jpg",
+        "posterWebp": "media/anime-review/anime-mars-training/still-2.webp",
+        "width": 720,
+        "height": 1280
+      },
+      {
+        "poster": "media/anime-review/anime-mars-training/still-3.jpg",
+        "posterWebp": "media/anime-review/anime-mars-training/still-3.webp",
+        "width": 720,
+        "height": 1280
+      }
+    ]
+  },
+  "anime-mars-volley": {
+    "kind": "video",
+    "width": 720,
+    "height": 1280,
+    "aspect": "9:16",
+    "poster": "media/anime-review/anime-mars-volley/poster.jpg",
+    "posterWebp": "media/anime-review/anime-mars-volley/poster.webp",
+    "duration": 19.533333,
+    "hasAudio": true,
+    "full": "media/anime-review/anime-mars-volley/full.mp4",
+    "stills": [
+      {
+        "poster": "media/anime-review/anime-mars-volley/still-0.jpg",
+        "posterWebp": "media/anime-review/anime-mars-volley/still-0.webp",
+        "width": 720,
+        "height": 1280
+      },
+      {
+        "poster": "media/anime-review/anime-mars-volley/still-1.jpg",
+        "posterWebp": "media/anime-review/anime-mars-volley/still-1.webp",
+        "width": 720,
+        "height": 1280
+      },
+      {
+        "poster": "media/anime-review/anime-mars-volley/still-2.jpg",
+        "posterWebp": "media/anime-review/anime-mars-volley/still-2.webp",
+        "width": 720,
+        "height": 1280
+      },
+      {
+        "poster": "media/anime-review/anime-mars-volley/still-3.jpg",
+        "posterWebp": "media/anime-review/anime-mars-volley/still-3.webp",
+        "width": 720,
+        "height": 1280
+      }
+    ]
+  },
+  "anime-vamp-art-1": {
+    "kind": "image",
+    "width": 1024,
+    "height": 1536,
+    "aspect": "9:16",
+    "poster": "media/anime-review/anime-vamp-art-1/poster.jpg",
+    "posterWebp": "media/anime-review/anime-vamp-art-1/poster.webp"
+  },
+  "anime-vamp-art-2": {
+    "kind": "image",
+    "width": 1024,
+    "height": 1536,
+    "aspect": "9:16",
+    "poster": "media/anime-review/anime-vamp-art-2/poster.jpg",
+    "posterWebp": "media/anime-review/anime-vamp-art-2/poster.webp"
+  },
+  "anime-vamp-art-3": {
+    "kind": "image",
+    "width": 1024,
+    "height": 1536,
+    "aspect": "9:16",
+    "poster": "media/anime-review/anime-vamp-art-3/poster.jpg",
+    "posterWebp": "media/anime-review/anime-vamp-art-3/poster.webp"
+  },
+  "anime-vamp-art-4": {
+    "kind": "image",
+    "width": 1696,
+    "height": 2528,
+    "aspect": "9:16",
+    "poster": "media/anime-review/anime-vamp-art-4/poster.jpg",
+    "posterWebp": "media/anime-review/anime-vamp-art-4/poster.webp"
+  },
+  "anime-vamp-art-5": {
+    "kind": "image",
+    "width": 2688,
+    "height": 1520,
+    "aspect": "16:9",
+    "poster": "media/anime-review/anime-vamp-art-5/poster.jpg",
+    "posterWebp": "media/anime-review/anime-vamp-art-5/poster.webp"
+  },
+  "anime-vamp-art-6": {
+    "kind": "image",
+    "width": 2688,
+    "height": 1520,
+    "aspect": "16:9",
+    "poster": "media/anime-review/anime-vamp-art-6/poster.jpg",
+    "posterWebp": "media/anime-review/anime-vamp-art-6/poster.webp"
+  },
+  "anime-platform-art-1": {
+    "kind": "image",
+    "width": 2528,
+    "height": 1696,
+    "aspect": "16:9",
+    "poster": "media/anime-review/anime-platform-art-1/poster.jpg",
+    "posterWebp": "media/anime-review/anime-platform-art-1/poster.webp"
+  },
+  "anime-platform-art-2": {
+    "kind": "image",
+    "width": 2528,
+    "height": 1696,
+    "aspect": "16:9",
+    "poster": "media/anime-review/anime-platform-art-2/poster.jpg",
+    "posterWebp": "media/anime-review/anime-platform-art-2/poster.webp"
+  },
+  "anime-platform-art-3": {
+    "kind": "image",
+    "width": 2528,
+    "height": 1696,
+    "aspect": "16:9",
+    "poster": "media/anime-review/anime-platform-art-3/poster.jpg",
+    "posterWebp": "media/anime-review/anime-platform-art-3/poster.webp"
+  },
+  "anime-mars-female-art-1": {
+    "kind": "image",
+    "width": 3840,
+    "height": 2160,
+    "aspect": "16:9",
+    "poster": "media/anime-review/anime-mars-female-art-1/poster.jpg",
+    "posterWebp": "media/anime-review/anime-mars-female-art-1/poster.webp"
+  },
+  "anime-mars-female-art-2": {
+    "kind": "image",
+    "width": 2688,
+    "height": 1520,
+    "aspect": "16:9",
+    "poster": "media/anime-review/anime-mars-female-art-2/poster.jpg",
+    "posterWebp": "media/anime-review/anime-mars-female-art-2/poster.webp"
+  },
+  "anime-mars-female-art-3": {
+    "kind": "image",
+    "width": 2688,
+    "height": 1520,
+    "aspect": "16:9",
+    "poster": "media/anime-review/anime-mars-female-art-3/poster.jpg",
+    "posterWebp": "media/anime-review/anime-mars-female-art-3/poster.webp"
+  },
+  "anime-mars-female-art-4": {
+    "kind": "image",
+    "width": 2688,
+    "height": 1520,
+    "aspect": "16:9",
+    "poster": "media/anime-review/anime-mars-female-art-4/poster.jpg",
+    "posterWebp": "media/anime-review/anime-mars-female-art-4/poster.webp"
+  },
+  "anime-mars-female-art-5": {
+    "kind": "image",
+    "width": 2688,
+    "height": 1520,
+    "aspect": "16:9",
+    "poster": "media/anime-review/anime-mars-female-art-5/poster.jpg",
+    "posterWebp": "media/anime-review/anime-mars-female-art-5/poster.webp"
+  },
+  "anime-mars-male-art-1": {
+    "kind": "image",
+    "width": 2688,
+    "height": 1520,
+    "aspect": "16:9",
+    "poster": "media/anime-review/anime-mars-male-art-1/poster.jpg",
+    "posterWebp": "media/anime-review/anime-mars-male-art-1/poster.webp"
+  },
+  "anime-mars-male-art-2": {
+    "kind": "image",
+    "width": 2688,
+    "height": 1520,
+    "aspect": "16:9",
+    "poster": "media/anime-review/anime-mars-male-art-2/poster.jpg",
+    "posterWebp": "media/anime-review/anime-mars-male-art-2/poster.webp"
+  },
+  "anime-mars-male-art-3": {
+    "kind": "image",
+    "width": 2688,
+    "height": 1520,
+    "aspect": "16:9",
+    "poster": "media/anime-review/anime-mars-male-art-3/poster.jpg",
+    "posterWebp": "media/anime-review/anime-mars-male-art-3/poster.webp"
+  },
+  "anime-mars-test-art-1": {
+    "kind": "image",
+    "width": 2720,
+    "height": 1536,
+    "aspect": "16:9",
+    "poster": "media/anime-review/anime-mars-test-art-1/poster.jpg",
+    "posterWebp": "media/anime-review/anime-mars-test-art-1/poster.webp"
+  },
+  "anime-mars-test-art-2": {
+    "kind": "image",
+    "width": 3840,
+    "height": 2160,
+    "aspect": "16:9",
+    "poster": "media/anime-review/anime-mars-test-art-2/poster.jpg",
+    "posterWebp": "media/anime-review/anime-mars-test-art-2/poster.webp"
+  },
+  "anime-mars-test-art-3": {
+    "kind": "image",
+    "width": 2720,
+    "height": 1536,
+    "aspect": "16:9",
+    "poster": "media/anime-review/anime-mars-test-art-3/poster.jpg",
+    "posterWebp": "media/anime-review/anime-mars-test-art-3/poster.webp"
+  },
+  "anime-mars-test-art-4": {
+    "kind": "image",
+    "width": 2720,
+    "height": 1536,
+    "aspect": "16:9",
+    "poster": "media/anime-review/anime-mars-test-art-4/poster.jpg",
+    "posterWebp": "media/anime-review/anime-mars-test-art-4/poster.webp"
+  },
+  "anime-mars-test-art-5": {
+    "kind": "image",
+    "width": 3840,
+    "height": 2160,
+    "aspect": "16:9",
+    "poster": "media/anime-review/anime-mars-test-art-5/poster.jpg",
+    "posterWebp": "media/anime-review/anime-mars-test-art-5/poster.webp"
+  }
+}

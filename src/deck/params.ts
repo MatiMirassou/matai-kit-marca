@@ -1,3 +1,4 @@
+import {currentRoute} from '../lib/routes.ts';
 export type DeckMode = 'read' | 'present' | 'print';
 
 export interface DeckParams {
@@ -21,7 +22,7 @@ export function readParams(): DeckParams {
   const doc = q.get('doc') === 'brand' || document.documentElement.dataset.doc === 'brand' ? 'brand' : 'deck';
   return {
     doc,
-    deck: q.get('deck') ?? 'full',
+    deck: currentRoute().edition==='anime' ? 'anime' : q.get('deck') ?? 'full',
     forCompany,
     mode,
     play: q.get('play'),

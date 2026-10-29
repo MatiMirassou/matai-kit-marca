@@ -5,6 +5,7 @@ import { content,locale } from '../content';
 import type { SlideDef } from '../content/types.ts';
 import { readParams, type DeckMode, type DeckParams } from './params.ts';
 import {MediaRuntimeProvider} from '../components/MediaRuntime.tsx';
+import {animeEdition,animeName} from '../anime/deck.ts';
 
 interface DeckConfig {
   params: DeckParams;
@@ -71,8 +72,10 @@ export function DeckProvider({ children }: { children: ReactNode }) {
   const variant =
     params.doc === 'brand'
       ? { id: 'brand', name: 'Mat.AI — Visual identity guide', description: '', slides: content.brandSlides.map((s) => s.id) }
+      : params.deck==='anime' ? {id:'anime',name:animeName,description:'',slides:animeEdition(content.slides).map(s=>s.id)}
       : (content.variants.find((v) => v.id === params.deck) ?? content.variants[0]!);
   const slides = useMemo(() => {
+    if(params.doc!=='brand' && params.deck==='anime')return animeEdition(content.slides);
     const byId = new Map([...content.slides, ...content.brandSlides].map((s) => [s.id, s]));
     return variant.slides.map((id) => byId.get(id)).filter((s): s is SlideDef => !!s);
   }, [variant]);
@@ -114,12 +117,22 @@ export function DeckProvider({ children }: { children: ReactNode }) {
     html.lang=locale;
     html.dataset.motion = motion;
     html.dataset.audit = params.audit ? 'on' : 'off';
-  }, [mode, motion, params.audit]);
+    html.dataset.edition=params.deck==='anime'?'anime':'standard';
+    return ()=>{delete html.dataset.edition;};
+  }, [mode, motion, params.audit,params.deck]);
 
   useEffect(() => {
+    if(params.doc!=='brand'&&params.deck==='anime'){
+      document.title=animeName;
+      const previous=document.querySelector<HTMLMetaElement>('meta[name="robots"]');
+      const robots=previous??document.createElement('meta');
+      const old=robots.content;robots.name='robots';robots.content='noindex, nofollow, noarchive';
+      if(!previous)document.head.append(robots);
+      return ()=>{if(previous)robots.content=old;else robots.remove();};
+    }
     const base = params.doc === 'brand' ? `${content.brand.name} — Visual identity guide` : `${content.brand.name} — ${content.brand.tagline}`;
     document.title = params.forCompany && params.doc === 'deck' ? `${content.brand.name} × ${params.forCompany} — Capabilities` : base;
-  }, [params.forCompany, params.doc]);
+  }, [params.forCompany, params.doc,params.deck]);
 
   // Ctrl+P / browser print from read or present mode: render the print tree synchronously.
   useEffect(() => {

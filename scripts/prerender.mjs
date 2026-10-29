@@ -20,4 +20,7 @@ for(const page of pages()){
 const deckDir=path.join(root,'dist',lang,'presentation');await mkdir(deckDir,{recursive:true});
 const deck=template.replace('<html lang="en" data-mode="showcase">',`<html lang="${lang}" data-mode="read">`).replace(/<title>[\s\S]*?<\/title>/,`<title>Mat.AI — ${lang==='es'?'Presentación':'Presentation'}</title>`);
 await writeFile(path.join(deckDir,'index.html'),deck);
+const animeDir=path.join(deckDir,'anime');await mkdir(animeDir,{recursive:true});
+const anime=deck.replace(/<title>[\s\S]*?<\/title>/,`<title>Mat.AI — ${lang==='es'?'Edición Anime con IA':'AI Anime Edition'}</title>`).replace('</head>','<meta name="robots" content="noindex, nofollow, noarchive" /></head>');
+await writeFile(path.join(animeDir,'index.html'),anime);
 console.log(`Pre-rendered ${lang.toUpperCase()}: showcase, ${pages().length-1} project pages, presentation entry.`);
